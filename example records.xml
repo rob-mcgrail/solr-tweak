@@ -1,0 +1,305 @@
+<doc>
+<float name="score">2.992584</float>
+<str name="PID">MoE:TKI15639</str>
+−
+<arr name="contenttype">
+<str>book</str>
+</arr>
+<str name="dc.identifier">MoE:TKI15639</str>
+<str name="dc.title">Where the Wild Things Are</str>
+<str name="description">Activities based on the book by Maurice Sendak.</str>
+<str name="description_t">Activities based on the book by Maurice Sendak.</str>
+<str name="englishstatus">Live</str>
+−
+<arr name="ezf_df_text">
+<str>Where the Wild Things Are</str>
+<str>Activities based on the book by Maurice Sendak.</str>
+<str>en</str>
+<str>Written Language - Writing and Reading</str>
+<str>Written Language - Writing and Reading</str>
+<str>Picture books</str>
+<str>Picture books</str>
+<str>Children's literature</str>
+<str>Children's literature</str>
+<str>WAEC-20020716-455</str>
+<str>WAEC-20020716-455</str>
+<str>Where the Wild Things Are</str>
+<str>book</str>
+</arr>
+<str name="fgs.createdDate">2010-08-17T06:41:07.891Z</str>
+<str name="fgs.label">Where the Wild Things Are</str>
+<str name="fgs.lastModifiedDate">2010-09-09T03:15:39.125Z</str>
+<str name="fgs.ownerId">fedoraAdmin</str>
+<str name="fgs.state">Active</str>
+<str name="id">TKI15639</str>
+−
+<arr name="idCis">
+<str>TKI15639</str>
+</arr>
+<str name="id_t">TKI15639</str>
+<bool name="jurisdiction.restriction">false</bool>
+−
+<arr name="keyword">
+<str>Written Language - Writing and Reading</str>
+<str>Picture books</str>
+<str>Children's literature</str>
+<str>WAEC-20020716-455</str>
+</arr>
+−
+<arr name="keywords_t">
+<str>Written Language - Writing and Reading</str>
+<str>Picture books</str>
+<str>Children's literature</str>
+<str>WAEC-20020716-455</str>
+</arr>
+−
+<arr name="language">
+<str>en</str>
+</arr>
+−
+<arr name="learningarea">
+<str>English</str>
+</arr>
+<str name="maoristatus">live</str>
+−
+<arr name="text">
+<str>TKI15639</str>
+<str>Activities based on the book by Maurice Sendak.</str>
+<str>Written Language - Writing and Reading</str>
+<str>Picture books</str>
+<str>Children's literature</str>
+<str>WAEC-20020716-455</str>
+<str>Where the Wild Things Are</str>
+</arr>
+<date name="timestamp">2010-09-09T03:15:39.169Z</date>
+<str name="title">Where the Wild Things Are</str>
+−
+<arr name="title_t">
+<str>Where the Wild Things Are</str>
+<str>Where the Wild Things Are</str>
+</arr>
+<str name="tki_record_type">tkimetadataobject</str>
+−
+<arr name="userlevel">
+<str>Lower Primary</str>
+<str>Primary</str>
+<str>Middle Primary</str>
+</arr>
+</doc>
+
+=========
+
+<doc>
+<float name="score">0.9447489</float>
+−
+<arr name="attr_body_t">
+−
+<str>
+
+We value your feedback and ideas, and invite you to contact us at 
+
+
+ Te Kete Ipurangi
+
+ Level 2, 32 Blair Street
+
+ PO Box 19090 Wellington, New Zealand
+
+ Ph: 04 802 0462
+
+ Fax: 04 382 6509
+Email: efs@tki.org.nz 
+</str>
+</arr>
+−
+<arr name="attr_hide_from_menu_b">
+<bool>true</bool>
+</arr>
+−
+<arr name="attr_related_content_t">
+<str/>
+</arr>
+−
+<arr name="attr_title_t">
+<str>Contact us</str>
+</arr>
+<str name="englishstatus">live</str>
+−
+<arr name="ezf_df_text">
+<str>60b52c991b2c8e73607c012e51418ecc</str>
+<str>2cd078f47a1a2371175007b4a528f318</str>
+<str>http://efs.tki.org.nz/</str>
+<str>Contact us</str>
+<str>eng-NZ</str>
+<str>eng-NZ</str>
+<str>Nicki Alori</str>
+<str>Content page (generic)</str>
+<str>fa8f780baeb085637f5943bc4efbc5d0</str>
+<str>content_page_generic</str>
+<str>/1/2/103/1197/</str>
+<str>Footer/Contact-us</str>
+<str>1</str>
+<str>1</str>
+<str>Footer/Contact-us</str>
+<str>Contact us</str>
+−
+<str>
+
+We value your feedback and ideas, and invite you to contact us at 
+
+
+ Te Kete Ipurangi
+
+ Level 2, 32 Blair Street
+
+ PO Box 19090 Wellington, New Zealand
+
+ Ph: 04 802 0462
+
+ Fax: 04 382 6509
+Email: efs@tki.org.nz 
+</str>
+<str/>
+</arr>
+−
+<arr name="ezf_sp_words">
+<str>60b52c991b2c8e73607c012e51418ecc</str>
+<str>2cd078f47a1a2371175007b4a528f318</str>
+<str>http://efs.tki.org.nz/</str>
+<str>Contact us</str>
+<str>eng-NZ</str>
+<str>eng-NZ</str>
+<str>Nicki Alori</str>
+<str>Content page (generic)</str>
+<str>fa8f780baeb085637f5943bc4efbc5d0</str>
+<str>content_page_generic</str>
+<str>/1/2/103/1197/</str>
+<str>Footer/Contact-us</str>
+<str>1</str>
+<str>1</str>
+<str>Footer/Contact-us</str>
+<str>Contact us</str>
+−
+<str>
+
+We value your feedback and ideas, and invite you to contact us at 
+
+
+ Te Kete Ipurangi
+
+ Level 2, 32 Blair Street
+
+ PO Box 19090 Wellington, New Zealand
+
+ Ph: 04 802 0462
+
+ Fax: 04 382 6509
+Email: efs@tki.org.nz 
+</str>
+<str/>
+</arr>
+<str name="id">60b52c991b2c8e73607c012e51418ecc</str>
+<str name="maoristatus">live</str>
+−
+<arr name="meta_available_language_codes_s">
+<str>eng-NZ</str>
+</arr>
+−
+<arr name="meta_class_identifier_s">
+<str>content_page_generic</str>
+</arr>
+−
+<arr name="meta_class_name_t">
+<str>Content page (generic)</str>
+</arr>
+−
+<arr name="meta_contentclass_id_si">
+<int>17</int>
+</arr>
+−
+<arr name="meta_current_version_si">
+<int>2</int>
+</arr>
+<str name="meta_guid_s">60b52c991b2c8e73607c012e51418ecc</str>
+<int name="meta_id_si">3423</int>
+<str name="meta_installation_id_s">2cd078f47a1a2371175007b4a528f318</str>
+<str name="meta_installation_url_s">http://efs.tki.org.nz/</str>    ---------------------------part one of url
+−
+<arr name="meta_is_hidden_b">
+<bool>false</bool>
+</arr>
+−
+<arr name="meta_is_invisible_b">
+<bool>false</bool>
+</arr>
+<str name="meta_language_code_s">eng-NZ</str>
+−
+<arr name="meta_main_node_id_si">
+<int>1197</int>
+</arr>
+−
+<arr name="meta_main_parent_node_id_si">
+<int>103</int>
+</arr>
+<str name="meta_main_url_alias_s">Footer/Contact-us</str> 
+−
+<arr name="meta_modified_dt">
+<date>2010-03-24T12:18:17Z</date>
+</arr>
+<str name="meta_name_t">Contact us</str>
+−
+<arr name="meta_node_id_si">
+<int>1197</int>
+</arr>
+−
+<arr name="meta_owner_group_id_si">
+<int>13</int>
+</arr>
+−
+<arr name="meta_owner_id_si">
+<int>339</int>
+</arr>
+−
+<arr name="meta_owner_name_t">
+<str>Nicki Alori</str>
+</arr>
+−
+<arr name="meta_path_si">
+<int>1</int>
+<int>2</int>
+<int>103</int>
+<int>1197</int>
+</arr>
+−
+<arr name="meta_path_string_s">
+<str>/1/2/103/1197/</str>
+</arr>
+<date name="meta_published_dt">2010-03-03T09:21:08Z</date>
+−
+<arr name="meta_remote_id_s">
+<str>fa8f780baeb085637f5943bc4efbc5d0</str>
+</arr>
+<int name="meta_section_id_si">1</int>
+−
+<arr name="meta_sort_field_s">
+<str>1</str>
+</arr>
+−
+<arr name="meta_sort_order_s">
+<str>1</str>
+</arr>
+−
+<arr name="meta_url_alias_s">
+<str>Footer/Contact-us</str>  ----------------------- part two of url
+</arr>
+<date name="timestamp">2010-09-20T22:30:31.448Z</date>
+−
+<arr name="title_t">
+<str>Contact us</str>    ----------------------- title
+</arr>
+−
+<arr name="url">
+<str>http://efs.tki.org.nz/</str>
+<str>Footer/Contact-us</str>
+</arr>
+</doc>
