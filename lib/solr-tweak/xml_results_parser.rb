@@ -60,7 +60,7 @@ module XMLResultsParser
     @results_header = OpenStruct.new
 
     @results_header.numfound = results.xpath('//result[@name="response"]').first.attributes['numFound'].to_s
-    @results_header.query = results.xpath('//str[@name="q"]').first.content
+    # @results_header.query = results.xpath('//str[@name="q"]').first.content
 
     @results_header
   end

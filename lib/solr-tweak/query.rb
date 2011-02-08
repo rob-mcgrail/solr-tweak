@@ -94,6 +94,7 @@ class Query
     rescue SystemCallError, EOFError
       retry
     end
+    # puts results
     parse results
   end
 

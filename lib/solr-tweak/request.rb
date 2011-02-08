@@ -6,7 +6,7 @@ class Request
   # and other options, possibly via request#seed
   
   # q=test&   
-  # qt=tki&                  :http://wiki.apache.org/solr/SolrRequestHandler       This is probably where the magic is happening
+  # qt=tki&                  :http://wiki.apache.org/solr/SolrRequestHandler
   # hl.usePhraseHighlighter=true
   # &hl.highlightMultiTerm=true
   # &start=0
@@ -40,6 +40,87 @@ class Request
   # &forceElevation=false    does this mean it's not using elevation results?       :http://wiki.apache.org/solr/QueryElevationComponent
   # &enableElevation=true    false kills elevation (preset results in an xml config file)
 
+
+  # <requestHandler name="ezpublish" class="solr.DisMaxRequestHandler">
+  # −
+  # <lst name="defaults">
+  # <str name="echoParams">explicit</str>
+  # <float name="tie">0.01</float>
+  # <str name="qf">
+  #         ezf_df_text
+  #       </str>
+  # <str name="pf">
+  #         ezf_df_text
+  #       </str>
+  # <str name="bf">
+  # 
+  #       </str>
+  # <str name="fl">
+  #         meta_
+  #       </str>
+  # −
+  # <!--
+  #  mm explanation: for the values below:
+  #              1, 2 keywords: at least one must match
+  #              from 3-5 keywords, at least 2-4 must match
+  #              from 6-7 keywords, at least 4-5 must match
+  #              above 7 keywords, 60% of them must match
+  # 
+  # -->
+  # <str name="mm">
+  #         1<1 2<-1 5<-2 7<60%
+  #       </str>
+  # <int name="ps">100</int>
+  # <str name="q.alt">*:*</str>
+  # </lst>
+  # −
+  # <arr name="last-components">
+  # <str>spellcheck</str>
+  # <str>elevator</str>
+  # </arr>
+  # </requestHandler>
+
+
+
+  # <requestHandler name="tki" class="solr.SearchHandler">
+  # <!-- default values for query parameters -->
+  # −
+  # <lst name="defaults"> # provides default param values that will be used if the param does not have a value specified at request time. 
+  # <str name="defType">dismax</str>
+  # <float name="tie">0.01</float>
+  # −
+  # <str name="qf">
+  # 
+  #          title_t^10 keyword.text^7 description_t^5 location_t dc.format dc.right dc.subject topics.all.text contentprovider contentsource strand learningarea keylearningobjective educationalvalue host site institution_name_t url ezf_df_text
+  # 
+  # </str>
+  # <str name="hl.fl">ezf_df_text</str>
+  # </lst>
+  # −
+  # <lst name="appends"> # provides param values that will be used in addition to any values specified at request time (or as defaults. 
+  # −
+  # <str name="fq">
+  # 
+  #         meta_anon_access_b:true AND (url:[* TO *] AND url:http AND -url:cmis.cwa.co.nz AND -url:"http\://admin") AND -keyword:waec AND -keyword:moec AND englishstatus:live
+  # 
+  # </str>
+  # −
+  # <str name="bq">
+  # 
+  #         url:.nz^50 (dc.right:Ministry of Education, New Zealand)^100
+  # 
+  # </str>
+  # </lst>
+  # −
+  # <arr name="last-components">
+  # <str>spellcheck</str>
+  # <str>elevator</str>
+  # </arr>
+  # </requestHandler>
+  # −
+  # <!--
+
+
   attr_accessor :base, :q, :qf, :fl
 
   BASE = 'http://search.tki.org.nz:8983/solr/select?'
@@ -72,6 +153,7 @@ class Request
     request = String.new
     request << BASE
     request << 'q=' + @q
+    request << '&qt=tki' #jesus what is this doing?
     request << '&fl=' + @fl
     # request << 'qf=' + @qf
     request

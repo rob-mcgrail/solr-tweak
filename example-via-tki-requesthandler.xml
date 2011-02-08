@@ -1,0 +1,1514 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+	<lst name="responseHeader">
+		<int name="status">0</int>
+		<int name="QTime">1</int>
+	</lst>
+	<result name="response" numFound="634" start="0" maxScore="1.5710547">
+		<doc>
+			<float name="score">1.5710547</float>
+			<str name="PID">MoE:TKI15787</str>
+			<arr name="contenttype">
+				<str>text/html</str>
+			</arr>
+			<str name="dc.identifier">MoE:TKI15787</str>
+			<str name="dc.title">Hello in the Pacific</str>
+			<str name="description">This section of the Peace Corps website provides translations of greetings in a range of Pacific nations languages.</str>
+			<str name="description_t">This section of the Peace Corps website provides translations of greetings in a range of Pacific nations languages.</str>
+			<str name="englishstatus">Live</str>
+			<arr name="ezf_df_text">
+				<str>Hello in the Pacific</str>
+				<str>This section of the Peace Corps website provides translations of greetings in a range of Pacific nations languages.</str>
+				<str>en</str>
+				<str>Samoan language</str>
+				<str>Samoan language</str>
+				<str>Pacific nations</str>
+				<str>Pacific nations</str>
+				<str>Samoa</str>
+				<str>Samoa</str>
+				<str>Cook Islands</str>
+				<str>Cook Islands</str>
+				<str>Cook Islands Māori language</str>
+				<str>Cook Islands Māori language</str>
+				<str>Fiji</str>
+				<str>Fiji</str>
+				<str>Tonga</str>
+				<str>Tonga</str>
+				<str>Niue</str>
+				<str>Niue</str>
+				<str>Tongan language</str>
+				<str>Tongan language</str>
+				<str>Niuean language</str>
+				<str>Niuean language</str>
+				<str>Fijian language</str>
+				<str>Fijian language</str>
+				<str>Translation</str>
+				<str>Translation</str>
+				<str>Digital Opportunities</str>
+				<str>Digital Opportunities</str>
+				<str>Greetings</str>
+				<str>Greetings</str>
+				<str>Hello in the Pacific</str>
+				<str>text/html</str>
+			</arr>
+			<str name="fgs.createdDate">2010-08-24T04:01:12.109Z</str>
+			<str name="fgs.label">Hello in the Pacific</str>
+			<str name="fgs.lastModifiedDate">2010-09-03T01:48:03.255Z</str>
+			<str name="fgs.ownerId">fedoraAdmin</str>
+			<str name="fgs.state">Active</str>
+			<str name="id">TKI15787</str>
+			<arr name="idCis">
+				<str>TKI15787</str>
+			</arr>
+			<str name="id_t">TKI15787</str>
+			<bool name="jurisdiction.restriction">false</bool>
+			<arr name="keyword">
+				<str>Samoan language</str>
+				<str>Pacific nations</str>
+				<str>Samoa</str>
+				<str>Cook Islands</str>
+				<str>Cook Islands Māori language</str>
+				<str>Fiji</str>
+				<str>Tonga</str>
+				<str>Niue</str>
+				<str>Tongan language</str>
+				<str>Niuean language</str>
+				<str>Fijian language</str>
+				<str>Translation</str>
+				<str>Digital Opportunities</str>
+				<str>Greetings</str>
+			</arr>
+			<arr name="keywords_t">
+				<str>Samoan language</str>
+				<str>Pacific nations</str>
+				<str>Samoa</str>
+				<str>Cook Islands</str>
+				<str>Cook Islands Māori language</str>
+				<str>Fiji</str>
+				<str>Tonga</str>
+				<str>Niue</str>
+				<str>Tongan language</str>
+				<str>Niuean language</str>
+				<str>Fijian language</str>
+				<str>Translation</str>
+				<str>Digital Opportunities</str>
+				<str>Greetings</str>
+			</arr>
+			<arr name="language">
+				<str>en</str>
+			</arr>
+			<arr name="learningarea">
+				<str>Social Sciences</str>
+				<str>Learning Languages</str>
+			</arr>
+			<str name="maoristatus">live</str>
+			<arr name="text">
+				<str>TKI15787</str>
+				<str>This section of the Peace Corps website provides translations of greetings in a range of Pacific nations languages.</str>
+				<str>Samoan language</str>
+				<str>Pacific nations</str>
+				<str>Samoa</str>
+				<str>Cook Islands</str>
+				<str>Cook Islands Māori language</str>
+				<str>Fiji</str>
+				<str>Tonga</str>
+				<str>Niue</str>
+				<str>Tongan language</str>
+				<str>Niuean language</str>
+				<str>Fijian language</str>
+				<str>Translation</str>
+				<str>Digital Opportunities</str>
+				<str>Greetings</str>
+				<str>Hello in the Pacific</str>
+			</arr>
+			<date name="timestamp">2010-09-03T03:10:42.656Z</date>
+			<str name="title">Hello in the Pacific</str>
+			<arr name="title_t">
+				<str>Hello in the Pacific</str>
+				<str>Hello in the Pacific</str>
+			</arr>
+			<str name="tki_record_type">tkimetadataobject</str>
+			<arr name="url">
+				<str>http://www.peacecorps.gov/wws/views/hello/pacific.html</str>
+			</arr>
+			<arr name="userlevel">
+				<str>Lower secondary</str>
+				<str>Primary</str>
+				<str>Secondary</str>
+				<str>Upper Primary</str>
+				<str>Middle Primary</str>
+			</arr>
+		</doc>
+		<doc>
+			<float name="score">1.1226906</float>
+			<str name="PID">MoE:TKI50212</str>
+			<arr name="contenttype">
+				<str>text/html</str>
+				<str>text/html</str>
+			</arr>
+			<str name="dc.identifier">MoE:TKI50212</str>
+			<str name="dc.right">Hello World Publications</str>
+			<str name="dc.title">Hello-World</str>
+			<str name="dc_right">Hello World Publications</str>
+			<str name="description">This site contains games, activities, dialogues, and songs for learning English, French, Spanish, German, Chinese, Indonesian, Russian, and Italian. </str>
+			<str name="description_t">This site contains games, activities, dialogues, and songs for learning English, French, Spanish, German, Chinese, Indonesian, Russian, and Italian. </str>
+			<str name="englishstatus">Live</str>
+			<arr name="ezf_df_text">
+				<str>Hello-World</str>
+				<str>This site contains games, activities, dialogues, and songs for learning English, French, Spanish, German, Chinese, Indonesian, Russian, and Italian. </str>
+				<str>en</str>
+				<str>ESOL</str>
+				<str>ESOL</str>
+				<str>Spanish language</str>
+				<str>Spanish language</str>
+				<str>French language</str>
+				<str>French language</str>
+				<str>German language</str>
+				<str>German language</str>
+				<str>Songs</str>
+				<str>Songs</str>
+				<str>Indonesian language</str>
+				<str>Indonesian language</str>
+				<str>Chinese language</str>
+				<str>Chinese language</str>
+				<str>English language - study and teaching</str>
+				<str>English language - study and teaching</str>
+				<str>Ingarihi Hei Reo Mō Kaikōrero Reo Kē</str>
+				<str>Ingarihi Hei Reo Mō Kaikōrero Reo Kē</str>
+				<str>Te Reo Hapanihi</str>
+				<str>Te Reo Hapanihi</str>
+				<str>Te Reo Pāniora</str>
+				<str>Te Reo Pāniora</str>
+				<str>Te Reo Wīwī</str>
+				<str>Te Reo Wīwī</str>
+				<str>Te Reo Tiamana</str>
+				<str>Te Reo Tiamana</str>
+				<str>Ngā waiata</str>
+				<str>Ngā waiata</str>
+				<str>Te Reo Initōnīhia</str>
+				<str>Te Reo Initōnīhia</str>
+				<str>Vocabulary development</str>
+				<str>Vocabulary development</str>
+				<str>Pronunciation</str>
+				<str>Pronunciation</str>
+				<str>Second language learning</str>
+				<str>Second language learning</str>
+				<str>Te ako reo rua</str>
+				<str>Te ako reo rua</str>
+				<str>Hello-World</str>
+				<str>text/html</str>
+				<str>text/html</str>
+			</arr>
+			<str name="fgs.createdDate">2010-08-20T00:49:30.067Z</str>
+			<str name="fgs.label">Hello-World</str>
+			<str name="fgs.lastModifiedDate">2010-09-09T03:48:48.461Z</str>
+			<str name="fgs.ownerId">fedoraAdmin</str>
+			<str name="fgs.state">Active</str>
+			<str name="id">TKI50212</str>
+			<arr name="idCis">
+				<str>TKI50212</str>
+			</arr>
+			<str name="id_t">TKI50212</str>
+			<bool name="jurisdiction.restriction">false</bool>
+			<arr name="keyword">
+				<str>ESOL</str>
+				<str>Spanish language</str>
+				<str>French language</str>
+				<str>German language</str>
+				<str>Songs</str>
+				<str>Indonesian language</str>
+				<str>Chinese language</str>
+				<str>English language - study and teaching</str>
+				<str>Ingarihi Hei Reo Mō Kaikōrero Reo Kē</str>
+				<str>Te Reo Hapanihi</str>
+				<str>Te Reo Pāniora</str>
+				<str>Te Reo Wīwī</str>
+				<str>Te Reo Tiamana</str>
+				<str>Ngā waiata</str>
+				<str>Te Reo Initōnīhia</str>
+				<str>Vocabulary development</str>
+				<str>Pronunciation</str>
+				<str>Second language learning</str>
+				<str>Te ako reo rua</str>
+			</arr>
+			<arr name="keywords_t">
+				<str>ESOL</str>
+				<str>Spanish language</str>
+				<str>French language</str>
+				<str>German language</str>
+				<str>Songs</str>
+				<str>Indonesian language</str>
+				<str>Chinese language</str>
+				<str>English language - study and teaching</str>
+				<str>Ingarihi Hei Reo Mō Kaikōrero Reo Kē</str>
+				<str>Te Reo Hapanihi</str>
+				<str>Te Reo Pāniora</str>
+				<str>Te Reo Wīwī</str>
+				<str>Te Reo Tiamana</str>
+				<str>Ngā waiata</str>
+				<str>Te Reo Initōnīhia</str>
+				<str>Vocabulary development</str>
+				<str>Pronunciation</str>
+				<str>Second language learning</str>
+				<str>Te ako reo rua</str>
+			</arr>
+			<arr name="language">
+				<str>en</str>
+			</arr>
+			<arr name="learningarea">
+				<str>Learning Languages</str>
+			</arr>
+			<str name="maoristatus">live</str>
+			<arr name="text">
+				<str>TKI50212</str>
+				<str>This site contains games, activities, dialogues, and songs for learning English, French, Spanish, German, Chinese, Indonesian, Russian, and Italian. </str>
+				<str>ESOL</str>
+				<str>Spanish language</str>
+				<str>French language</str>
+				<str>German language</str>
+				<str>Songs</str>
+				<str>Indonesian language</str>
+				<str>Chinese language</str>
+				<str>English language - study and teaching</str>
+				<str>Ingarihi Hei Reo Mō Kaikōrero Reo Kē</str>
+				<str>Te Reo Hapanihi</str>
+				<str>Te Reo Pāniora</str>
+				<str>Te Reo Wīwī</str>
+				<str>Te Reo Tiamana</str>
+				<str>Ngā waiata</str>
+				<str>Te Reo Initōnīhia</str>
+				<str>Vocabulary development</str>
+				<str>Pronunciation</str>
+				<str>Second language learning</str>
+				<str>Te ako reo rua</str>
+				<str>Hello-World</str>
+			</arr>
+			<date name="timestamp">2010-09-09T03:48:48.525Z</date>
+			<str name="title">Hello-World</str>
+			<arr name="title_t">
+				<str>Hello-World</str>
+				<str>Hello-World</str>
+			</arr>
+			<str name="tki_record_type">tkimetadataobject</str>
+			<arr name="url">
+				<str>http://www.hello-world.com/</str>
+			</arr>
+			<arr name="userlevel">
+				<str>Lower Primary</str>
+				<str>Lower secondary</str>
+				<str>Primary</str>
+				<str>Secondary</str>
+				<str>Upper Primary</str>
+				<str>Kura Tuarua</str>
+				<str>Kura Tuatahi - Reanga Tuakana</str>
+				<str>Kura Tuatahi</str>
+				<str>Kura Tuarua - Reanga Teina</str>
+				<str>Kura Tuatahi - Reanga Teina</str>
+				<str>Middle Primary</str>
+				<str>Kura Tuatahi - Reanga Takawaenga</str>
+			</arr>
+		</doc>
+		<doc>
+			<float name="score">0.8998216</float>
+			<str name="PID">MoE:TKI29584</str>
+			<arr name="contenttype">
+				<str>text/html</str>
+				<str>text/html</str>
+			</arr>
+			<str name="dc.identifier">MoE:TKI29584</str>
+			<str name="dc.right">BBC</str>
+			<str name="dc.title">Talk Spanish: Hola! - Say Hello</str>
+			<str name="dc_right">BBC</str>
+			<str name="description">This section of BBC Languages website provides an introduction in practical spoken Spanish - "Talk Spanish". Includes links to video and audio clips, quizzes, essential words and phrases, and facts about Spain. This page is about saying hello.</str>
+			<str name="description_t">This section of BBC Languages website provides an introduction in practical spoken Spanish - "Talk Spanish". Includes links to video and audio clips, quizzes, essential words and phrases, and facts about Spain. This page is about saying hello.</str>
+			<str name="englishstatus">Live</str>
+			<arr name="ezf_df_text">
+				<str>Talk Spanish: Hola! - Say Hello</str>
+				<str>This section of BBC Languages website provides an introduction in practical spoken Spanish - "Talk Spanish". Includes links to video and audio clips, quizzes, essential words and phrases, and facts about Spain. This page is about saying hello.</str>
+				<str>spa</str>
+				<str>Spanish language</str>
+				<str>Spanish language</str>
+				<str>Communication skills</str>
+				<str>Communication skills</str>
+				<str>Grammar</str>
+				<str>Grammar</str>
+				<str>Conversation</str>
+				<str>Conversation</str>
+				<str>Te Reo Pāniora</str>
+				<str>Te Reo Pāniora</str>
+				<str>Pūmanawa Whakawhiti Kōrero</str>
+				<str>Pūmanawa Whakawhiti Kōrero</str>
+				<str>Te whakatakoto i te kupu</str>
+				<str>Te whakatakoto i te kupu</str>
+				<str>Vocabulary development</str>
+				<str>Vocabulary development</str>
+				<str>Second language learning</str>
+				<str>Second language learning</str>
+				<str>greetings</str>
+				<str>greetings</str>
+				<str>Talk Spanish: Hola! - Say Hello</str>
+				<str>text/html</str>
+				<str>text/html</str>
+			</arr>
+			<str name="fgs.createdDate">2010-08-17T02:23:41.903Z</str>
+			<str name="fgs.label">Talk Spanish: Hola! - Say Hello</str>
+			<str name="fgs.lastModifiedDate">2010-09-09T03:06:12.835Z</str>
+			<str name="fgs.ownerId">fedoraAdmin</str>
+			<str name="fgs.state">Active</str>
+			<str name="id">TKI29584</str>
+			<arr name="idCis">
+				<str>TKI29584</str>
+			</arr>
+			<str name="id_t">TKI29584</str>
+			<bool name="jurisdiction.restriction">false</bool>
+			<arr name="keyword">
+				<str>Spanish language</str>
+				<str>Communication skills</str>
+				<str>Grammar</str>
+				<str>Conversation</str>
+				<str>Te Reo Pāniora</str>
+				<str>Pūmanawa Whakawhiti Kōrero</str>
+				<str>Te whakatakoto i te kupu</str>
+				<str>Vocabulary development</str>
+				<str>Second language learning</str>
+				<str>greetings</str>
+			</arr>
+			<arr name="keywords_t">
+				<str>Spanish language</str>
+				<str>Communication skills</str>
+				<str>Grammar</str>
+				<str>Conversation</str>
+				<str>Te Reo Pāniora</str>
+				<str>Pūmanawa Whakawhiti Kōrero</str>
+				<str>Te whakatakoto i te kupu</str>
+				<str>Vocabulary development</str>
+				<str>Second language learning</str>
+				<str>greetings</str>
+			</arr>
+			<arr name="language">
+				<str>spa</str>
+			</arr>
+			<arr name="learningarea">
+				<str>Learning Languages</str>
+			</arr>
+			<str name="maoristatus">live</str>
+			<arr name="text">
+				<str>TKI29584</str>
+				<str>This section of BBC Languages website provides an introduction in practical spoken Spanish - "Talk Spanish". Includes links to video and audio clips, quizzes, essential words and phrases, and facts about Spain. This page is about saying hello.</str>
+				<str>Spanish language</str>
+				<str>Communication skills</str>
+				<str>Grammar</str>
+				<str>Conversation</str>
+				<str>Te Reo Pāniora</str>
+				<str>Pūmanawa Whakawhiti Kōrero</str>
+				<str>Te whakatakoto i te kupu</str>
+				<str>Vocabulary development</str>
+				<str>Second language learning</str>
+				<str>greetings</str>
+				<str>Talk Spanish: Hola! - Say Hello</str>
+			</arr>
+			<date name="timestamp">2010-09-09T03:06:12.933Z</date>
+			<str name="title">Talk Spanish: Hola! - Say Hello</str>
+			<arr name="title_t">
+				<str>Talk Spanish: Hola! - Say Hello</str>
+				<str>Talk Spanish: Hola! - Say Hello</str>
+			</arr>
+			<str name="tki_record_type">tkimetadataobject</str>
+			<arr name="url">
+				<str>http://www.bbc.co.uk/languages/spanish/talk/1fro.shtml</str>
+			</arr>
+			<arr name="userlevel">
+				<str>Lower secondary</str>
+				<str>Primary</str>
+				<str>Secondary</str>
+				<str>Upper Primary</str>
+				<str>Upper Secondary</str>
+				<str>Kura Tuarua</str>
+				<str>Kura Tuatahi - Reanga Tuakana</str>
+				<str>Kura Tuatahi</str>
+				<str>Kura Tuarua - Reanga Tuakana</str>
+				<str>Kura Tuarua - Reanga Teina</str>
+			</arr>
+		</doc>
+		<doc>
+			<float name="score">0.4863149</float>
+			<arr name="attr_body_t">
+				<str>
+
+Achievement objectives
+
+NZSL guidelines (NZSLiNZC) levels 1 and 2
+
+
+</str>
+			</arr>
+			<arr name="attr_description_t">
+				<str>
+
+Learning about NZSL, counting from one to 10, and greeting others
+
+
+</str>
+			</arr>
+			<arr name="attr_short_title_t">
+				<str>Unit 1 - HELLO Hello!</str>
+			</arr>
+			<arr name="attr_title_t">
+				<str>Unit 1 - &lt;span title="New Zealand Sign Language"&gt;HELLO&lt;/span&gt; Hello!</str>
+			</arr>
+			<str name="englishstatus">live</str>
+			<arr name="ezf_df_text">
+				<str>9cb465ac401b98bae95d1097898199c0</str>
+				<str>941cbbee9ba7fbe548b377f27be6f7b0</str>
+				<str>http://www.nzsl.tki.org.nz/</str>
+				<str>Unit 1 - HELLO Hello!</str>
+				<str>eng-NZ</str>
+				<str>eng-NZ</str>
+				<str>kent wee</str>
+				<str>Unit</str>
+				<str>c9981b70b1c06ec935c6f2caba198371</str>
+				<str>unit</str>
+				<str>/1/2/67/108/</str>
+				<str>Units/Unit-1-HELLO-Hello</str>
+				<str>1</str>
+				<str>1</str>
+				<str>Units/Unit-1-HELLO-Hello</str>
+				<str>Unit 1 - &lt;span title="New Zealand Sign Language"&gt;HELLO&lt;/span&gt; Hello!</str>
+				<str>Unit 1 - HELLO Hello!</str>
+				<str>
+
+Learning about NZSL, counting from one to 10, and greeting others
+
+
+</str>
+				<str>
+
+Achievement objectives
+
+NZSL guidelines (NZSLiNZC) levels 1 and 2
+
+
+</str>
+			</arr>
+			<arr name="ezf_sp_words">
+				<str>9cb465ac401b98bae95d1097898199c0</str>
+				<str>941cbbee9ba7fbe548b377f27be6f7b0</str>
+				<str>http://www.nzsl.tki.org.nz/</str>
+				<str>Unit 1 - HELLO Hello!</str>
+				<str>eng-NZ</str>
+				<str>eng-NZ</str>
+				<str>kent wee</str>
+				<str>Unit</str>
+				<str>c9981b70b1c06ec935c6f2caba198371</str>
+				<str>unit</str>
+				<str>/1/2/67/108/</str>
+				<str>Units/Unit-1-HELLO-Hello</str>
+				<str>1</str>
+				<str>1</str>
+				<str>Units/Unit-1-HELLO-Hello</str>
+				<str>Unit 1 - &lt;span title="New Zealand Sign Language"&gt;HELLO&lt;/span&gt; Hello!</str>
+				<str>Unit 1 - HELLO Hello!</str>
+				<str>
+
+Learning about NZSL, counting from one to 10, and greeting others
+
+
+</str>
+				<str>
+
+Achievement objectives
+
+NZSL guidelines (NZSLiNZC) levels 1 and 2
+
+
+</str>
+			</arr>
+			<str name="id">9cb465ac401b98bae95d1097898199c0</str>
+			<str name="maoristatus">live</str>
+			<arr name="meta_available_language_codes_s">
+				<str>eng-NZ</str>
+			</arr>
+			<arr name="meta_class_identifier_s">
+				<str>unit</str>
+			</arr>
+			<arr name="meta_class_name_t">
+				<str>Unit</str>
+			</arr>
+			<arr name="meta_contentclass_id_si">
+				<int>22</int>
+			</arr>
+			<arr name="meta_current_version_si">
+				<int>99</int>
+			</arr>
+			<str name="meta_guid_s">9cb465ac401b98bae95d1097898199c0</str>
+			<int name="meta_id_si">119</int>
+			<str name="meta_installation_id_s">941cbbee9ba7fbe548b377f27be6f7b0</str>
+			<str name="meta_installation_url_s">http://www.nzsl.tki.org.nz/</str>
+			<arr name="meta_is_hidden_b">
+				<bool>false</bool>
+			</arr>
+			<arr name="meta_is_invisible_b">
+				<bool>false</bool>
+			</arr>
+			<str name="meta_language_code_s">eng-NZ</str>
+			<arr name="meta_main_node_id_si">
+				<int>108</int>
+			</arr>
+			<arr name="meta_main_parent_node_id_si">
+				<int>67</int>
+			</arr>
+			<str name="meta_main_url_alias_s">Units/Unit-1-HELLO-Hello</str>
+			<arr name="meta_modified_dt">
+				<date>2010-11-09T15:27:59Z</date>
+			</arr>
+			<str name="meta_name_t">Unit 1 - HELLO Hello!</str>
+			<arr name="meta_node_id_si">
+				<int>108</int>
+			</arr>
+			<arr name="meta_owner_group_id_si">
+				<int>14</int>
+			</arr>
+			<arr name="meta_owner_id_si">
+				<int>117</int>
+			</arr>
+			<arr name="meta_owner_name_t">
+				<str>kent wee</str>
+			</arr>
+			<arr name="meta_path_si">
+				<int>1</int>
+				<int>2</int>
+				<int>67</int>
+				<int>108</int>
+			</arr>
+			<arr name="meta_path_string_s">
+				<str>/1/2/67/108/</str>
+			</arr>
+			<date name="meta_published_dt">2010-07-02T10:21:59Z</date>
+			<arr name="meta_remote_id_s">
+				<str>c9981b70b1c06ec935c6f2caba198371</str>
+			</arr>
+			<int name="meta_section_id_si">1</int>
+			<arr name="meta_sort_field_s">
+				<str>1</str>
+			</arr>
+			<arr name="meta_sort_order_s">
+				<str>1</str>
+			</arr>
+			<arr name="meta_url_alias_s">
+				<str>Units/Unit-1-HELLO-Hello</str>
+			</arr>
+			<date name="timestamp">2010-12-16T23:51:10.954Z</date>
+			<arr name="title_t">
+				<str>Unit 1 - HELLO Hello!</str>
+			</arr>
+			<arr name="url">
+				<str>http://www.nzsl.tki.org.nz/</str>
+				<str>Units/Unit-1-HELLO-Hello</str>
+			</arr>
+		</doc>
+		<doc>
+			<float name="score">0.30485964</float>
+			<str name="PID">MoE:TKI25251</str>
+			<arr name="contenttype">
+				<str>text/html</str>
+				<str>text/html</str>
+			</arr>
+			<str name="dc.identifier">MoE:TKI25251</str>
+			<str name="dc.right">Ministry of Education, New Zealand </str>
+			<str name="dc.title">Ready to Read Teachers' Notes: Early Level - Red</str>
+			<str name="dc_right">Ministry of Education, New Zealand </str>
+			<str name="description">This web page provides teachers' notes for the Ready to Read series at early level (red). Lists titles over three pages and links to each one for specific notes. The notes identify text features, and provide guidelines for teachers on setting the scene, how to approach the first reading with the students, ideas for revisiting the text, and suggestions for further activities.</str>
+			<str name="description_t">This web page provides teachers' notes for the Ready to Read series at early level (red). Lists titles over three pages and links to each one for specific notes. The notes identify text features, and provide guidelines for teachers on setting the scene, how to approach the first reading with the students, ideas for revisiting the text, and suggestions for further activities.</str>
+			<str name="englishstatus">Live</str>
+			<arr name="ezf_df_text">
+				<str>Ready to Read Teachers' Notes: Early Level - Red</str>
+				<str>This web page provides teachers' notes for the Ready to Read series at early level (red). Lists titles over three pages and links to each one for specific notes. The notes identify text features, and provide guidelines for teachers on setting the scene, how to approach the first reading with the students, ideas for revisiting the text, and suggestions for further activities.</str>
+				<str>en</str>
+				<str>Literacy skills</str>
+				<str>Literacy skills</str>
+				<str>Reading skills</str>
+				<str>Reading skills</str>
+				<str>Written Language - Writing and Reading</str>
+				<str>Written Language - Writing and Reading</str>
+				<str>Pūmanawa Tuhituhi</str>
+				<str>Pūmanawa Tuhituhi</str>
+				<str>Pūmanawa Pānui</str>
+				<str>Pūmanawa Pānui</str>
+				<str>Reo Tuhituhi - Te Tuhituhi Me Te Pānui</str>
+				<str>Reo Tuhituhi - Te Tuhituhi Me Te Pānui</str>
+				<str>Where Is Sam?</str>
+				<str>Where Is Sam?</str>
+				<str>Where is Miss Pool?</str>
+				<str>Where is Miss Pool?</str>
+				<str>Where are my Socks?</str>
+				<str>Where are my Socks?</str>
+				<str>What's in the Cake Tin?</str>
+				<str>What's in the Cake Tin?</str>
+				<str>What Does Greedy Cat Like?</str>
+				<str>What Does Greedy Cat Like?</str>
+				<str>Training Ruby</str>
+				<str>Training Ruby</str>
+				<str>Time for Bed</str>
+				<str>Time for Bed</str>
+				<str>This Leaf</str>
+				<str>This Leaf</str>
+				<str>The Wind</str>
+				<str>The Wind</str>
+				<str>The Smile</str>
+				<str>The Smile</str>
+				<str>The Race</str>
+				<str>The Race</str>
+				<str>The Biggest Cake in the World</str>
+				<str>The Biggest Cake in the World</str>
+				<str>Smile, Said Dad</str>
+				<str>Smile, Said Dad</str>
+				<str>Simon Says</str>
+				<str>Simon Says</str>
+				<str>Shush!</str>
+				<str>Shush!</str>
+				<str>Rain, Rain</str>
+				<str>Rain, Rain</str>
+				<str>Open It!</str>
+				<str>Open It!</str>
+				<str>My Worm House</str>
+				<str>My Worm House</str>
+				<str>My Bike</str>
+				<str>My Bike</str>
+				<str>It's My Bread</str>
+				<str>It's My Bread</str>
+				<str>Hoiho's Chicks</str>
+				<str>Hoiho's Chicks</str>
+				<str>Hello, Dad!</str>
+				<str>Hello, Dad!</str>
+				<str>Happy Birthday</str>
+				<str>Happy Birthday</str>
+				<str>Bumble Bee</str>
+				<str>Bumble Bee</str>
+				<str>Car Shopping</str>
+				<str>Car Shopping</str>
+				<str>Dog</str>
+				<str>Dog</str>
+				<str>Going Fishing</str>
+				<str>Going Fishing</str>
+				<str>Greedy Cat is Hungry</str>
+				<str>Greedy Cat is Hungry</str>
+				<str>Ready to Read Teachers' Notes: Early Level - Red </str>
+				<str>text/html</str>
+				<str>text/html</str>
+			</arr>
+			<str name="fgs.createdDate">2010-08-16T21:53:42.574Z</str>
+			<str name="fgs.label">Ready to Read Teachers' Notes: Early Level - Red </str>
+			<str name="fgs.lastModifiedDate">2010-09-09T02:58:10.600Z</str>
+			<str name="fgs.ownerId">fedoraAdmin</str>
+			<str name="fgs.state">Active</str>
+			<str name="id">TKI25251</str>
+			<arr name="idCis">
+				<str>TKI25251</str>
+			</arr>
+			<str name="id_t">TKI25251</str>
+			<bool name="jurisdiction.restriction">false</bool>
+			<arr name="keyword">
+				<str>Literacy skills</str>
+				<str>Reading skills</str>
+				<str>Written Language - Writing and Reading</str>
+				<str>Pūmanawa Tuhituhi</str>
+				<str>Pūmanawa Pānui</str>
+				<str>Reo Tuhituhi - Te Tuhituhi Me Te Pānui</str>
+				<str>Where Is Sam?</str>
+				<str>Where is Miss Pool?</str>
+				<str>Where are my Socks?</str>
+				<str>What's in the Cake Tin?</str>
+				<str>What Does Greedy Cat Like?</str>
+				<str>Training Ruby</str>
+				<str>Time for Bed</str>
+				<str>This Leaf</str>
+				<str>The Wind</str>
+				<str>The Smile</str>
+				<str>The Race</str>
+				<str>The Biggest Cake in the World</str>
+				<str>Smile, Said Dad</str>
+				<str>Simon Says</str>
+				<str>Shush!</str>
+				<str>Rain, Rain</str>
+				<str>Open It!</str>
+				<str>My Worm House</str>
+				<str>My Bike</str>
+				<str>It's My Bread</str>
+				<str>Hoiho's Chicks</str>
+				<str>Hello, Dad!</str>
+				<str>Happy Birthday</str>
+				<str>Bumble Bee</str>
+				<str>Car Shopping</str>
+				<str>Dog</str>
+				<str>Going Fishing</str>
+				<str>Greedy Cat is Hungry</str>
+			</arr>
+			<arr name="keywords_t">
+				<str>Literacy skills</str>
+				<str>Reading skills</str>
+				<str>Written Language - Writing and Reading</str>
+				<str>Pūmanawa Tuhituhi</str>
+				<str>Pūmanawa Pānui</str>
+				<str>Reo Tuhituhi - Te Tuhituhi Me Te Pānui</str>
+				<str>Where Is Sam?</str>
+				<str>Where is Miss Pool?</str>
+				<str>Where are my Socks?</str>
+				<str>What's in the Cake Tin?</str>
+				<str>What Does Greedy Cat Like?</str>
+				<str>Training Ruby</str>
+				<str>Time for Bed</str>
+				<str>This Leaf</str>
+				<str>The Wind</str>
+				<str>The Smile</str>
+				<str>The Race</str>
+				<str>The Biggest Cake in the World</str>
+				<str>Smile, Said Dad</str>
+				<str>Simon Says</str>
+				<str>Shush!</str>
+				<str>Rain, Rain</str>
+				<str>Open It!</str>
+				<str>My Worm House</str>
+				<str>My Bike</str>
+				<str>It's My Bread</str>
+				<str>Hoiho's Chicks</str>
+				<str>Hello, Dad!</str>
+				<str>Happy Birthday</str>
+				<str>Bumble Bee</str>
+				<str>Car Shopping</str>
+				<str>Dog</str>
+				<str>Going Fishing</str>
+				<str>Greedy Cat is Hungry</str>
+			</arr>
+			<arr name="language">
+				<str>en</str>
+			</arr>
+			<arr name="learningarea">
+				<str>English</str>
+			</arr>
+			<str name="maoristatus">live</str>
+			<arr name="text">
+				<str>TKI25251</str>
+				<str>This web page provides teachers' notes for the Ready to Read series at early level (red). Lists titles over three pages and links to each one for specific notes. The notes identify text features, and provide guidelines for teachers on setting the scene, how to approach the first reading with the students, ideas for revisiting the text, and suggestions for further activities.</str>
+				<str>Literacy skills</str>
+				<str>Reading skills</str>
+				<str>Written Language - Writing and Reading</str>
+				<str>Pūmanawa Tuhituhi</str>
+				<str>Pūmanawa Pānui</str>
+				<str>Reo Tuhituhi - Te Tuhituhi Me Te Pānui</str>
+				<str>Where Is Sam?</str>
+				<str>Where is Miss Pool?</str>
+				<str>Where are my Socks?</str>
+				<str>What's in the Cake Tin?</str>
+				<str>What Does Greedy Cat Like?</str>
+				<str>Training Ruby</str>
+				<str>Time for Bed</str>
+				<str>This Leaf</str>
+				<str>The Wind</str>
+				<str>The Smile</str>
+				<str>The Race</str>
+				<str>The Biggest Cake in the World</str>
+				<str>Smile, Said Dad</str>
+				<str>Simon Says</str>
+				<str>Shush!</str>
+				<str>Rain, Rain</str>
+				<str>Open It!</str>
+				<str>My Worm House</str>
+				<str>My Bike</str>
+				<str>It's My Bread</str>
+				<str>Hoiho's Chicks</str>
+				<str>Hello, Dad!</str>
+				<str>Happy Birthday</str>
+				<str>Bumble Bee</str>
+				<str>Car Shopping</str>
+				<str>Dog</str>
+				<str>Going Fishing</str>
+				<str>Greedy Cat is Hungry</str>
+				<str>Ready to Read Teachers' Notes: Early Level - Red </str>
+			</arr>
+			<date name="timestamp">2010-09-09T02:58:10.703Z</date>
+			<str name="title">Ready to Read Teachers' Notes: Early Level - Red </str>
+			<arr name="title_t">
+				<str>Ready to Read Teachers' Notes: Early Level - Red</str>
+				<str>Ready to Read Teachers' Notes: Early Level - Red </str>
+			</arr>
+			<str name="tki_record_type">tkimetadataobject</str>
+			<arr name="url">
+				<str>http://www.tki.org.nz/r/literacy_numeracy/professional/teachers_notes/ready_to_read/rr_results_e.php?level=2&amp;rr_search=level</str>
+			</arr>
+			<arr name="userlevel">
+				<str>Lower Primary</str>
+				<str>Primary</str>
+				<str>Kura Tuatahi</str>
+				<str>Kura Tuatahi - Reanga Teina</str>
+			</arr>
+		</doc>
+		<doc>
+			<float name="score">0.11228609</float>
+			<float name="boost">1.0801425</float>
+			<long name="contentLength">13908</long>
+			<str name="date">20101215</str>
+			<str name="digest">d85048de31755affab64b7c45ae0b2fd</str>
+			<str name="englishstatus">live</str>
+			<arr name="ezf_df_text">
+				<str>TKI - On TKI: Te Reo Māori Phrases Te Kete Ipurangi Navigation: Te Kete Ipurangi Communities Schools Search TKI Te Kete Ipurangi user options: Register Log in Navigate in: te reo Māori Close Register TKI uses the New Zealand education  you again / See ya! Ka kite ano Goodbye, to someone leaving Hāere ra Goodbye, to someone staying E noho ra Sit down E noho Stand up E tu Great Very good Ka pai Tino pai Be strong / Give it heaps Kia kaha I'm sorry / excuse me Aroha mai That's OK / OK Kei te pai Footer: TKI - Te Kete Ipurangi Search | Feedback | About this site Accessibility | Contact TKI | Copyright and privacy | Help New Zealand Government Copyright © 2010 New Zealand Ministry of Education</str>
+				<str>TKI - On TKI: Te Reo Māori Phrases</str>
+			</arr>
+			<arr name="ezf_sp_words">
+				<str>TKI - On TKI: Te Reo Māori Phrases</str>
+			</arr>
+			<str name="id">http://www.tki.org.nz/r/maori/support/support_tereo_1_e.php</str>
+			<arr name="idCis">
+				<str>http://www.tki.org.nz/r/maori/support/support_tereo_1_e.php</str>
+			</arr>
+			<str name="id_t">http://www.tki.org.nz/r/maori/support/support_tereo_1_e.php</str>
+			<str name="maoristatus">live</str>
+			<str name="meta_name_t">TKI - On TKI: Te Reo Māori Phrases</str>
+			<str name="segment">20101216144834</str>
+			<str name="site">www.tki.org.nz</str>
+			<str name="subcollection"/>
+			<arr name="text">
+				<str>http://www.tki.org.nz/r/maori/support/support_tereo_1_e.php</str>
+			</arr>
+			<date name="timestamp">2010-12-16T01:53:42.938Z</date>
+			<arr name="title_t">
+				<str>TKI - On TKI: Te Reo Māori Phrases</str>
+			</arr>
+			<long name="tstamp">20101215233333813</long>
+			<arr name="type">
+				<str>text/html</str>
+				<str>text</str>
+				<str>html</str>
+			</arr>
+			<arr name="url">
+				<str>http://www.tki.org.nz/r/maori/support/support_tereo_1_e.php</str>
+			</arr>
+		</doc>
+		<doc>
+			<float name="score">0.10549606</float>
+			<arr name="attr_body_t">
+				<str>
+
+HELLO, tēnā koutou, and welcome.
+
+Phone: (04) 463 8000
+ Fax: (04) 463 8001
+
+
+</str>
+			</arr>
+			<arr name="attr_intro_t">
+				<str/>
+			</arr>
+			<arr name="attr_short_title_t">
+				<str/>
+			</arr>
+			<arr name="attr_title_t">
+				<str>Contact us </str>
+			</arr>
+			<str name="englishstatus">live</str>
+			<arr name="ezf_df_text">
+				<str>0881f2329f765b6e85a3f2ca21227d3e</str>
+				<str>941cbbee9ba7fbe548b377f27be6f7b0</str>
+				<str>http://www.nzsl.tki.org.nz/</str>
+				<str>Contact us </str>
+				<str>eng-NZ</str>
+				<str>eng-NZ</str>
+				<str>kent wee</str>
+				<str>General content</str>
+				<str>404f7f2cbba790ef97386f3aa468337b</str>
+				<str>general_content</str>
+				<str>/1/2/61/158/</str>
+				<str>About-this-site/Contact-us</str>
+				<str>1</str>
+				<str>1</str>
+				<str>About-this-site/Contact-us</str>
+				<str>Contact us </str>
+				<str/>
+				<str/>
+				<str>
+
+HELLO, tēnā koutou, and welcome.
+
+
+Phone: (04) 463 8000
+ Fax: (04) 463 8001
+
+
+</str>
+			</arr>
+			<arr name="ezf_sp_words">
+				<str>0881f2329f765b6e85a3f2ca21227d3e</str>
+				<str>941cbbee9ba7fbe548b377f27be6f7b0</str>
+				<str>http://www.nzsl.tki.org.nz/</str>
+				<str>Contact us </str>
+				<str>eng-NZ</str>
+				<str>eng-NZ</str>
+				<str>kent wee</str>
+				<str>General content</str>
+				<str>404f7f2cbba790ef97386f3aa468337b</str>
+				<str>general_content</str>
+				<str>/1/2/61/158/</str>
+				<str>About-this-site/Contact-us</str>
+				<str>1</str>
+				<str>1</str>
+				<str>About-this-site/Contact-us</str>
+				<str>Contact us </str>
+				<str/>
+				<str/>
+				<str>
+
+HELLO, tēnā koutou, and welcome.
+463 8000
+ Fax: (04) 463 8001
+
+
+</str>
+			</arr>
+			<str name="id">0881f2329f765b6e85a3f2ca21227d3e</str>
+			<str name="maoristatus">live</str>
+			<arr name="meta_available_language_codes_s">
+				<str>eng-NZ</str>
+			</arr>
+			<arr name="meta_class_identifier_s">
+				<str>general_content</str>
+			</arr>
+			<arr name="meta_class_name_t">
+				<str>General content</str>
+			</arr>
+			<arr name="meta_contentclass_id_si">
+				<int>21</int>
+			</arr>
+			<arr name="meta_current_version_si">
+				<int>4</int>
+			</arr>
+			<str name="meta_guid_s">0881f2329f765b6e85a3f2ca21227d3e</str>
+			<int name="meta_id_si">171</int>
+			<str name="meta_installation_id_s">941cbbee9ba7fbe548b377f27be6f7b0</str>
+			<str name="meta_installation_url_s">http://www.nzsl.tki.org.nz/</str>
+			<arr name="meta_is_hidden_b">
+				<bool>false</bool>
+			</arr>
+			<arr name="meta_is_invisible_b">
+				<bool>false</bool>
+			</arr>
+			<str name="meta_language_code_s">eng-NZ</str>
+			<arr name="meta_main_node_id_si">
+				<int>158</int>
+			</arr>
+			<arr name="meta_main_parent_node_id_si">
+				<int>61</int>
+			</arr>
+			<str name="meta_main_url_alias_s">About-this-site/Contact-us</str>
+			<arr name="meta_modified_dt">
+				<date>2010-09-23T13:01:02Z</date>
+			</arr>
+			<str name="meta_name_t">Contact us </str>
+			<arr name="meta_node_id_si">
+				<int>158</int>
+			</arr>
+			<arr name="meta_owner_group_id_si">
+				<int>14</int>
+			</arr>
+			<arr name="meta_owner_id_si">
+				<int>117</int>
+			</arr>
+			<arr name="meta_owner_name_t">
+				<str>kent wee</str>
+			</arr>
+			<arr name="meta_path_si">
+				<int>1</int>
+				<int>2</int>
+				<int>61</int>
+				<int>158</int>
+			</arr>
+			<arr name="meta_path_string_s">
+				<str>/1/2/61/158/</str>
+			</arr>
+			<date name="meta_published_dt">2010-07-07T16:42:35Z</date>
+			<arr name="meta_remote_id_s">
+				<str>404f7f2cbba790ef97386f3aa468337b</str>
+			</arr>
+			<int name="meta_section_id_si">1</int>
+			<arr name="meta_sort_field_s">
+				<str>1</str>
+			</arr>
+			<arr name="meta_sort_order_s">
+				<str>1</str>
+			</arr>
+			<arr name="meta_url_alias_s">
+				<str>About-this-site/Contact-us</str>
+			</arr>
+			<date name="timestamp">2010-12-16T23:51:10.086Z</date>
+			<arr name="title_t">
+				<str>Contact us </str>
+			</arr>
+			<arr name="url">
+				<str>http://www.nzsl.tki.org.nz/</str>
+				<str>About-this-site/Contact-us</str>
+			</arr>
+		</doc>
+		<doc>
+			<float name="score">0.10324322</float>
+			<arr name="attr_body_t">
+				<str>
+
+Welcome to NZSL
+
+
+Thumbs up!
+
+
+</str>
+			</arr>
+			<arr name="attr_intro_t">
+				<str/>
+			</arr>
+			<arr name="attr_short_title_t">
+				<str>Introduction</str>
+			</arr>
+			<arr name="attr_title_t">
+				<str>Introduction</str>
+			</arr>
+			<str name="englishstatus">live</str>
+			<arr name="ezf_df_text">
+				<str>7b06cd46c0685c9122e02ebcc549f2d4</str>
+				<str>941cbbee9ba7fbe548b377f27be6f7b0</str>
+				<str>http://www.nzsl.tki.org.nz/</str>
+				<str>Introduction</str>
+				<str>eng-NZ</str>
+				<str>eng-NZ</str>
+				<str>Raj Vivakarn</str>
+				<str>General content</str>
+				<str>a357b47b412c53894599f67d57f1a378</str>
+				<str>general_content</str>
+				<str>/1/2/74/</str>
+				<str>Introduction</str>
+				<str>8</str>
+				<str>1</str>
+				<str>Introduction</str>
+				<str>Introduction</str>
+				<str>Introduction</str>
+				<str/>
+				<str>
+
+Welcome to NZSL
+
+
+Thumbs up!
+
+
+</str>
+			</arr>
+			<arr name="ezf_sp_words">
+				<str>7b06cd46c0685c9122e02ebcc549f2d4</str>
+				<str>941cbbee9ba7fbe548b377f27be6f7b0</str>
+				<str>http://www.nzsl.tki.org.nz/</str>
+				<str>Introduction</str>
+				<str>eng-NZ</str>
+				<str>eng-NZ</str>
+				<str>Raj Vivakarn</str>
+				<str>General content</str>
+				<str>a357b47b412c53894599f67d57f1a378</str>
+				<str>general_content</str>
+				<str>/1/2/74/</str>
+				<str>Introduction</str>
+				<str>8</str>
+				<str>1</str>
+				<str>Introduction</str>
+				<str>Introduction</str>
+				<str>Introduction</str>
+				<str/>
+				<str>
+
+Welcome to NZSL
+
+
+HELLO, tēnā koutou, and welcome.
+
+
+Thumbs up!
+
+
+</str>
+			</arr>
+			<str name="id">7b06cd46c0685c9122e02ebcc549f2d4</str>
+			<str name="maoristatus">live</str>
+			<arr name="meta_available_language_codes_s">
+				<str>eng-NZ</str>
+			</arr>
+			<arr name="meta_class_identifier_s">
+				<str>general_content</str>
+			</arr>
+			<arr name="meta_class_name_t">
+				<str>General content</str>
+			</arr>
+			<arr name="meta_contentclass_id_si">
+				<int>21</int>
+			</arr>
+			<arr name="meta_current_version_si">
+				<int>23</int>
+			</arr>
+			<str name="meta_guid_s">7b06cd46c0685c9122e02ebcc549f2d4</str>
+			<int name="meta_id_si">72</int>
+			<str name="meta_installation_id_s">941cbbee9ba7fbe548b377f27be6f7b0</str>
+			<str name="meta_installation_url_s">http://www.nzsl.tki.org.nz/</str>
+			<arr name="meta_is_hidden_b">
+				<bool>false</bool>
+			</arr>
+			<arr name="meta_is_invisible_b">
+				<bool>false</bool>
+			</arr>
+			<str name="meta_language_code_s">eng-NZ</str>
+			<arr name="meta_main_node_id_si">
+				<int>74</int>
+			</arr>
+			<arr name="meta_main_parent_node_id_si">
+				<int>2</int>
+			</arr>
+			<str name="meta_main_url_alias_s">Introduction</str>
+			<arr name="meta_modified_dt">
+				<date>2010-07-16T15:27:57Z</date>
+			</arr>
+			<str name="meta_name_t">Introduction</str>
+			<arr name="meta_node_id_si">
+				<int>74</int>
+			</arr>
+			<arr name="meta_owner_group_id_si">
+				<int>13</int>
+			</arr>
+			<arr name="meta_owner_id_si">
+				<int>64</int>
+			</arr>
+			<arr name="meta_owner_name_t">
+				<str>Raj Vivakarn</str>
+			</arr>
+			<arr name="meta_path_si">
+				<int>1</int>
+				<int>2</int>
+				<int>74</int>
+			</arr>
+			<arr name="meta_path_string_s">
+				<str>/1/2/74/</str>
+			</arr>
+			<date name="meta_published_dt">2010-04-09T05:29:29Z</date>
+			<arr name="meta_remote_id_s">
+				<str>a357b47b412c53894599f67d57f1a378</str>
+			</arr>
+			<int name="meta_section_id_si">1</int>
+			<arr name="meta_sort_field_s">
+				<str>8</str>
+			</arr>
+			<arr name="meta_sort_order_s">
+				<str>1</str>
+			</arr>
+			<arr name="meta_url_alias_s">
+				<str>Introduction</str>
+			</arr>
+			<date name="timestamp">2010-12-16T23:51:14.484Z</date>
+			<arr name="title_t">
+				<str>Introduction</str>
+			</arr>
+			<arr name="url">
+				<str>http://www.nzsl.tki.org.nz/</str>
+				<str>Introduction</str>
+			</arr>
+		</doc>
+		<doc>
+			<float name="score">0.0893644</float>
+			<arr name="attr_body_t">
+				<str>
+
+HELLO, tēnā koutou, and welcome.
+
+Thumbs up!
+
+
+</str>
+			</arr>
+			<arr name="attr_intro_t">
+				<str/>
+			</arr>
+			<arr name="attr_short_title_t">
+				<str/>
+			</arr>
+			<arr name="attr_title_t">
+				<str>Welcome to NZSL</str>
+			</arr>
+			<str name="englishstatus">live</str>
+			<arr name="ezf_df_text">
+				<str>b4591d867a9854b7b0e011b9fb0a841a</str>
+				<str>941cbbee9ba7fbe548b377f27be6f7b0</str>
+				<str>http://www.nzsl.tki.org.nz/</str>
+				<str>Welcome to NZSL</str>
+				<str>eng-NZ</str>
+				<str>eng-NZ</str>
+				<str>Raj Vivakarn</str>
+				<str>General content</str>
+				<str>0f63ff3b5187f29395a1f8e2a022b48f</str>
+				<str>general_content</str>
+				<str>/1/2/74/75/</str>
+				<str>Introduction/Welcome-to-NZSL</str>
+				<str>1</str>
+				<str>1</str>
+				<str>Introduction/Welcome-to-NZSL</str>
+				<str>Welcome to NZSL</str>
+				<str/>
+				<str/>
+				<str>
+
+HELLO, tēnā koutou, and welcome.
+
+Thumbs up!
+
+
+</str>
+			</arr>
+			<arr name="ezf_sp_words">
+				<str>b4591d867a9854b7b0e011b9fb0a841a</str>
+				<str>941cbbee9ba7fbe548b377f27be6f7b0</str>
+				<str>http://www.nzsl.tki.org.nz/</str>
+				<str>Welcome to NZSL</str>
+				<str>eng-NZ</str>
+				<str>eng-NZ</str>
+				<str>Raj Vivakarn</str>
+				<str>General content</str>
+				<str>0f63ff3b5187f29395a1f8e2a022b48f</str>
+				<str>general_content</str>
+				<str>/1/2/74/75/</str>
+				<str>Introduction/Welcome-to-NZSL</str>
+				<str>1</str>
+				<str>1</str>
+				<str>Introduction/Welcome-to-NZSL</str>
+				<str>Welcome to NZSL</str>
+				<str/>
+				<str/>
+				<str>
+
+HELLO, tēnā koutou, and welcome.
+
+
+</str>
+			</arr>
+			<str name="id">b4591d867a9854b7b0e011b9fb0a841a</str>
+			<str name="maoristatus">live</str>
+			<arr name="meta_available_language_codes_s">
+				<str>eng-NZ</str>
+			</arr>
+			<arr name="meta_class_identifier_s">
+				<str>general_content</str>
+			</arr>
+			<arr name="meta_class_name_t">
+				<str>General content</str>
+			</arr>
+			<arr name="meta_contentclass_id_si">
+				<int>21</int>
+			</arr>
+			<arr name="meta_current_version_si">
+				<int>16</int>
+			</arr>
+			<str name="meta_guid_s">b4591d867a9854b7b0e011b9fb0a841a</str>
+			<int name="meta_id_si">73</int>
+			<str name="meta_installation_id_s">941cbbee9ba7fbe548b377f27be6f7b0</str>
+			<str name="meta_installation_url_s">http://www.nzsl.tki.org.nz/</str>
+			<arr name="meta_is_hidden_b">
+				<bool>false</bool>
+			</arr>
+			<arr name="meta_is_invisible_b">
+				<bool>false</bool>
+			</arr>
+			<str name="meta_language_code_s">eng-NZ</str>
+			<arr name="meta_main_node_id_si">
+				<int>75</int>
+			</arr>
+			<arr name="meta_main_parent_node_id_si">
+				<int>74</int>
+			</arr>
+			<str name="meta_main_url_alias_s">Introduction/Welcome-to-NZSL</str>
+			<arr name="meta_modified_dt">
+				<date>2010-09-23T13:38:43Z</date>
+			</arr>
+			<str name="meta_name_t">Welcome to NZSL</str>
+			<arr name="meta_node_id_si">
+				<int>75</int>
+			</arr>
+			<arr name="meta_owner_group_id_si">
+				<int>13</int>
+			</arr>
+			<arr name="meta_owner_id_si">
+				<int>64</int>
+			</arr>
+			<arr name="meta_owner_name_t">
+				<str>Raj Vivakarn</str>
+			</arr>
+			<arr name="meta_path_si">
+				<int>1</int>
+				<int>2</int>
+				<int>74</int>
+				<int>75</int>
+			</arr>
+			<arr name="meta_path_string_s">
+				<str>/1/2/74/75/</str>
+			</arr>
+			<date name="meta_published_dt">2010-04-09T05:30:08Z</date>
+			<arr name="meta_remote_id_s">
+				<str>0f63ff3b5187f29395a1f8e2a022b48f</str>
+			</arr>
+			<int name="meta_section_id_si">1</int>
+			<arr name="meta_sort_field_s">
+				<str>1</str>
+			</arr>
+			<arr name="meta_sort_order_s">
+				<str>1</str>
+			</arr>
+			<arr name="meta_url_alias_s">
+				<str>Introduction/Welcome-to-NZSL</str>
+			</arr>
+			<date name="timestamp">2010-12-16T23:51:18.199Z</date>
+			<arr name="title_t">
+				<str>Welcome to NZSL</str>
+			</arr>
+			<arr name="url">
+				<str>http://www.nzsl.tki.org.nz/</str>
+				<str>Introduction/Welcome-to-NZSL</str>
+			</arr>
+		</doc>
+		<doc>
+			<float name="score">0.08246871</float>
+			<arr name="attr_body_t">
+				<str>
+Your update on resources, news and notices.
+
+Picture Credits (Creative Commons): 'Koru' by jsmoral; 'Woodshed' - DeeKnow; 'Writing' - JKim1; 'Question' - Segozyme; '...All the books you haven't read' by Allatan
+</str>
+			</arr>
+			<arr name="attr_description_t">
+				<str/>
+			</arr>
+			<arr name="attr_word_count_si">
+				<int>5</int>
+			</arr>
+			<str name="englishstatus">live</str>
+			<arr name="ezf_df_text">
+				<str>88b23d07ae10b044594ef3bb70163847</str>
+				<str>55a4a4a2fbbb054f67de310f32e0d665</str>
+				<str>http://englishonline.tki.org.nz/</str>
+				<str>June 2009</str>
+				<str>eng-NZ</str>
+				<str>eng-NZ</str>
+				<str>General Content</str>
+				<str>afa3a89bb34672ce43f90c988a6d4dd7</str>
+				<str>general_content</str>
+				<str>/1/2/6686/3854/</str>
+				<str>Community-newsletters/June-2009</str>
+				<str>1</str>
+				<str>1</str>
+				<str>Community-newsletters/June-2009</str>
+				<str>
+Your update on resources, news and notices.
+mons): 'Koru' by jsmoral; 'Woodshed' - DeeKnow; 'Writing' - JKim1; 'Question' - Segozyme; '...All the books you haven't read' by Allatan
+</str>
+				<str/>
+			</arr>
+			<arr name="ezf_sp_words">
+				<str>88b23d07ae10b044594ef3bb70163847</str>
+				<str>55a4a4a2fbbb054f67de310f32e0d665</str>
+				<str>http://englishonline.tki.org.nz/</str>
+				<str>June 2009</str>
+				<str>eng-NZ</str>
+				<str>eng-NZ</str>
+				<str>General Content</str>
+				<str>afa3a89bb34672ce43f90c988a6d4dd7</str>
+				<str>general_content</str>
+				<str>/1/2/6686/3854/</str>
+				<str>Community-newsletters/June-2009</str>
+				<str>1</str>
+				<str>1</str>
+				<str>Community-newsletters/June-2009</str>
+				<str>
+Your update on resources, news and notices.
+
+Dear Colleagues,
+
+Picture Credits (Creative Commons): 'Koru' by jsmoral; 'Woodshed' - DeeKnow; 'Writing' - JKim1; 'Question' - Segozyme; '...All the books you haven't read' by Allatan
+</str>
+				<str/>
+			</arr>
+			<str name="id">88b23d07ae10b044594ef3bb70163847</str>
+			<str name="maoristatus">live</str>
+			<arr name="meta_available_language_codes_s">
+				<str>eng-NZ</str>
+			</arr>
+			<arr name="meta_class_identifier_s">
+				<str>general_content</str>
+			</arr>
+			<arr name="meta_class_name_t">
+				<str>General Content</str>
+			</arr>
+			<arr name="meta_contentclass_id_si">
+				<int>18</int>
+			</arr>
+			<arr name="meta_current_version_si">
+				<int>17</int>
+			</arr>
+			<str name="meta_guid_s">88b23d07ae10b044594ef3bb70163847</str>
+			<int name="meta_id_si">4301</int>
+			<str name="meta_installation_id_s">55a4a4a2fbbb054f67de310f32e0d665</str>
+			<str name="meta_installation_url_s">http://englishonline.tki.org.nz/</str>
+			<arr name="meta_is_hidden_b">
+				<bool>false</bool>
+			</arr>
+			<arr name="meta_is_invisible_b">
+				<bool>false</bool>
+			</arr>
+			<str name="meta_language_code_s">eng-NZ</str>
+			<arr name="meta_main_node_id_si">
+				<int>3854</int>
+			</arr>
+			<arr name="meta_main_parent_node_id_si">
+				<int>6686</int>
+			</arr>
+			<str name="meta_main_url_alias_s">Community-newsletters/June-2009</str>
+			<arr name="meta_modified_dt">
+				<date>2010-07-26T12:53:08Z</date>
+			</arr>
+			<str name="meta_name_t">June 2009</str>
+			<arr name="meta_node_id_si">
+				<int>3854</int>
+			</arr>
+			<arr name="meta_owner_id_si">
+				<int>0</int>
+			</arr>
+			<arr name="meta_path_si">
+				<int>1</int>
+				<int>2</int>
+				<int>6686</int>
+				<int>3854</int>
+			</arr>
+			<arr name="meta_path_string_s">
+				<str>/1/2/6686/3854/</str>
+			</arr>
+			<date name="meta_published_dt">2009-06-02T09:54:52Z</date>
+			<arr name="meta_remote_id_s">
+				<str>afa3a89bb34672ce43f90c988a6d4dd7</str>
+			</arr>
+			<int name="meta_section_id_si">1</int>
+			<arr name="meta_sort_field_s">
+				<str>1</str>
+			</arr>
+			<arr name="meta_sort_order_s">
+				<str>1</str>
+			</arr>
+			<arr name="meta_url_alias_s">
+				<str>Community-newsletters/June-2009</str>
+			</arr>
+			<date name="timestamp">2010-09-20T21:51:15.976Z</date>
+			<arr name="title_t">
+				<str>June 2009</str>
+			</arr>
+			<arr name="url">
+				<str>http://englishonline.tki.org.nz/</str>
+				<str>Community-newsletters/June-2009</str>
+			</arr>
+		</doc>
+	</result>
+</response>

@@ -1,7 +1,7 @@
 #!/usr/bin/ruby
 PATH = File.expand_path(File.dirname(__FILE__))
 
-require PATH + "/../lib/r-solr.rb"
+require File.expand_path("../../lib/solr-tweak.rb", __FILE__)
 
 
 Outputter.limit 10 #how to change results limit
@@ -9,10 +9,10 @@ Outputter.limit 10 #how to change results limit
 Terminal.clear
 
 x = Query.new
-y = Query.new
+# y = Query.new
 
 x << 'hello'
-y << 'hello hi'
+# y << 'hello hi'
 
-Scorer.new(x, y)
+# Scorer.new(x, y)
 

@@ -14,5 +14,5 @@ require 'lib/solr-tweak/to_terminal'
 require 'lib/solr-tweak/scorer'
 
 require 'lib/solr-tweak/seeds/requests'
-require 'lib/solr-tweak/seeds/comparison_results'
+require 'lib/solr-tweak/seeds/comparison_requests'
 

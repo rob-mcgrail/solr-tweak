@@ -10,7 +10,7 @@ class Scorer
   def initialize(actual, ideal, opts = {})
     @actual = actual.results
     @request = actual.request
-    @term = @actual.first.query
+    # @term = @actual.first.query # not returned anymore if you use the tki handler
 
     @ideal = quack(ideal)
 

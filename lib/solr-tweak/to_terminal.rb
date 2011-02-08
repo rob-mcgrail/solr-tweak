@@ -23,9 +23,9 @@ class ToTerminal < Outputter
 
   def print_result_header
     numfound = @results.first.numfound
-    query = @results.first.query
+    # query = @results.first.query
 
-    puts "Results for: #{query} ================================== Returned: #{numfound} ===".black_on_yellow
+    puts "Results for: {query} ================================== Returned: #{numfound} ===".black_on_yellow
     puts
   end
 
