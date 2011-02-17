@@ -1,4 +1,5 @@
 class Request
+  require 'cgi'
   # Request objects are placed in queries, where they create the
   # Solr request url.
   #
@@ -155,6 +156,7 @@ class Request
     request << BASE
     request << 'q=' + @q
     request << '&fl=' + @fl
+    request << '&sort=score+desc'
 
     if @dismax == true
       request << '&defType=dismax'
