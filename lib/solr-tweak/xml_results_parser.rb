@@ -10,12 +10,23 @@ module XMLResultsParser
 # the @results Array. This @results array is closely coupled to the Outputter classes, so if things change
 # here, that's what will break. Also the Scorer and other analysis classes...
 
-  def parse(results)
-    @results = Array.new
+# Should probably make an interface for this class.
 
-    @results << get_result_header(results)
-    @results << get_result_body(results)
-    @results << get_result_footer(results)
+  def parse(results, opts ={})
+
+    defaults = {
+      :query => '',
+    }
+
+    @query = opts[:query] || defaults[:query]
+
+    @raw_results = results
+
+    @parsed_results = Array.new
+
+    @parsed_results << get_result_header
+    @parsed_results << get_result_body
+    @parsed_results << get_result_footer
 
     @results
   end
@@ -56,13 +67,11 @@ module XMLResultsParser
   end
 
   # Populates the first part of the @results array.
-  def get_result_header(results)
+  def get_result_header
     @results_header = OpenStruct.new
 
-    # query is a method in the parent (outputter) that gets the query from the @request object
-    @results_header.query = query
-
-    @results_header.numfound = results.xpath('//result[@name="response"]').first.attributes['numFound'].to_s
+    @results_header.numfound = @raw_results.xpath('//result[@name="response"]').first.attributes['numFound'].to_s
+    @results_header.query = @query
 
     @results_header
   end
@@ -71,10 +80,10 @@ module XMLResultsParser
   #
   # Creates an array of indidivual results, each an ostruct with values
   # available like: x.title, x.pid etc...
-  def get_result_body(results)
+  def get_result_body
 
     # Find individual records
-    docs = results.xpath('//doc')
+    docs = @raw_results.xpath('//doc')
     tmp = Array.new
     # Iterate through the records
     docs.each do |doc|
@@ -111,7 +120,7 @@ module XMLResultsParser
   end
 
 
-  def get_result_footer(results)
+  def get_result_footer
     nil
   end
 
@@ -135,6 +144,7 @@ module XMLResultsParser
       end
     end
   end
+
 
 end
 

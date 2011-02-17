@@ -18,7 +18,7 @@ class Query
   # defaults to the Request class and ToTerminal
   def initialize opts ={}
 
-    @results = nil
+    @parsed_results = nil
 
     defaults = {
       :output => ToTerminal.new,
@@ -53,19 +53,15 @@ class Query
 
     print = opts[:print] || defaults[:print]
 
-    if @results == nil
-      get_results
+    get_results if @parsed_results == nil
 
-      @output << @request.full if print
-      @output << @results if print
-
-      @results
-    else
-      @output << @request.full if print
-      @output << @results if print
-
-      @results
+    if print
+      @output << @request.full
+      @output << @parsed_results
     end
+
+    @parsed_results
+
   end
 
   # Runs results with print set.
@@ -95,7 +91,7 @@ class Query
       retry
     end
     # puts results
-    parse results
+    parse results, :query => @request.q
   end
 
 

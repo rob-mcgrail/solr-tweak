@@ -7,3 +7,7 @@ BaselineRequest = Request.new.seed({
   :x => 'thing'
 })
 
+TkiRequest = Request.new.seed({
+  :qt => 'tki'
+})
+

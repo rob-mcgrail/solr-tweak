@@ -8,10 +8,14 @@ Outputter.limit 10 #how to change results limit
 
 Terminal.clear
 
-x = Query.new
+nothing =   Query.new
+standard =  Query.new :request => TkiRequest
+
+
 # y = Query.new
 
-x << 'hello'
+standard << 'educational leaders'
+nothing << 'educational leaders'
 # y << 'hello hi'
 
 # Scorer.new(x, y)

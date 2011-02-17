@@ -24,10 +24,6 @@ class Outputter
   # A catch-all way of printing arbitrary messages.
   private
 
-  def query
-    @request.q
-  end
-
   def announce(string)
     puts 'Called announce from the template...'
   end

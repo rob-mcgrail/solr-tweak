@@ -14,7 +14,7 @@ class ToTerminal < Outputter
 #
 
   def announce(string)
-    puts; puts ('        ' + string + '        ').white_on_blue; puts
+    puts; puts (string + '     ').white_on_blue; puts
   end
 
 
@@ -23,6 +23,7 @@ class ToTerminal < Outputter
 
   def print_result_header
     numfound = @results.first.numfound
+    query = @results.first.query
 
     puts "Results for: #{query} ================================== Returned: #{numfound} ===".black_on_yellow
     puts

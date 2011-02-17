@@ -4,8 +4,8 @@ class Request
   #
   # They are intended to be dropped in to queries, prepopulated with boosts
   # and other options, possibly via request#seed
-  
-  # q=test&   
+
+  # q=test&
   # qt=tki&                  :http://wiki.apache.org/solr/SolrRequestHandler
   # hl.usePhraseHighlighter=true
   # &hl.highlightMultiTerm=true
@@ -53,7 +53,7 @@ class Request
   #         ezf_df_text
   #       </str>
   # <str name="bf">
-  # 
+  #
   #       </str>
   # <str name="fl">
   #         meta_
@@ -65,7 +65,7 @@ class Request
   #              from 3-5 keywords, at least 2-4 must match
   #              from 6-7 keywords, at least 4-5 must match
   #              above 7 keywords, 60% of them must match
-  # 
+  #
   # -->
   # <str name="mm">
   #         1<1 2<-1 5<-2 7<60%
@@ -85,30 +85,30 @@ class Request
   # <requestHandler name="tki" class="solr.SearchHandler">
   # <!-- default values for query parameters -->
   # −
-  # <lst name="defaults"> # provides default param values that will be used if the param does not have a value specified at request time. 
+  # <lst name="defaults"> # provides default param values that will be used if the param does not have a value specified at request time.
   # <str name="defType">dismax</str>
   # <float name="tie">0.01</float>
   # −
   # <str name="qf">
-  # 
+  #
   #          title_t^10 keyword.text^7 description_t^5 location_t dc.format dc.right dc.subject topics.all.text contentprovider contentsource strand learningarea keylearningobjective educationalvalue host site institution_name_t url ezf_df_text
-  # 
+  #
   # </str>
   # <str name="hl.fl">ezf_df_text</str>
   # </lst>
   # −
-  # <lst name="appends"> # provides param values that will be used in addition to any values specified at request time (or as defaults. 
+  # <lst name="appends"> # provides param values that will be used in addition to any values specified at request time (or as defaults.
   # −
   # <str name="fq">
-  # 
+  #
   #         meta_anon_access_b:true AND (url:[* TO *] AND url:http AND -url:cmis.cwa.co.nz AND -url:"http\://admin") AND -keyword:waec AND -keyword:moec AND englishstatus:live
-  # 
+  #
   # </str>
   # −
   # <str name="bq">
-  # 
+  #
   #         url:.nz^50 (dc.right:Ministry of Education, New Zealand)^100
-  # 
+  #
   # </str>
   # </lst>
   # −
@@ -121,15 +121,17 @@ class Request
   # <!--
 
 
-  attr_accessor :base, :q, :qf, :fl
+  attr_accessor :base, :q, :qf, :fl, :qt
 
   BASE = 'http://search.tki.org.nz:8983/solr/select?'
 
   # Values set at initialize can always be overwritten
   # by seed.
   def initialize
-    @q = nil
+    @q = ''
     @fl = '*,+score'
+    @qt = ''
+    @qf = ''
   end
 
   # A class the populated the request with a hash of values.
@@ -153,7 +155,7 @@ class Request
     request = String.new
     request << BASE
     request << 'q=' + @q
-    request << '&qt=tki' #jesus what is this doing?
+    request << '&qt=' + @qt  #preset request handler
     request << '&fl=' + @fl
     # request << 'qf=' + @qf
     request
