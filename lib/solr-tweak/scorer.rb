@@ -10,6 +10,12 @@ class Scorer
   def initialize(actual, ideal, opts = {})
     @actual = actual.results
     @request = actual.request
+
+    defaults = {
+      :output => ToTerminal.new
+    }
+
+    @output = defaults[:output] || opts[:output]
     # @term = @actual.first.query # not returned anymore if you use the tki handler
 
     @ideal = quack(ideal)
@@ -20,7 +26,7 @@ class Scorer
     # the results.
     score
 
-    puts @score
+    @output << @score
   end
 
 
@@ -74,7 +80,6 @@ class Scorer
         @score += 10 - (ide_rank - act_rank).abs
       end
     end
-    @score
   end
 
 

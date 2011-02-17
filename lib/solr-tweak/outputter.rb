@@ -18,8 +18,11 @@ class Outputter
       print
     elsif arg.is_a? String
       self.announce arg
+    elsif arg.is_a? Fixnum
+      self.announce arg.to_s
     end
   end
+
 
   # A catch-all way of printing arbitrary messages.
   private

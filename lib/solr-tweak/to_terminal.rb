@@ -13,8 +13,9 @@ class ToTerminal < Outputter
 # query = Query.new :output => Meagaphone.new
 #
 
+
   def announce(string)
-    puts; puts (string + '     ').white_on_blue; puts
+    puts; puts (string + '                 ').white_on_blue; puts
   end
 
 

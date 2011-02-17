@@ -18,5 +18,5 @@ standard << 'educational leaders'
 nothing << 'educational leaders'
 # y << 'hello hi'
 
-# Scorer.new(x, y)
+Scorer.new(standard, nothing)
 
