@@ -56,12 +56,12 @@ class Query
     if @results == nil
       get_results
 
-      @output.announce @request.full if print
+      @output << @request.full if print
       @output << @results if print
 
       @results
     else
-      @output.announce @request.full if print
+      @output << @request.full if print
       @output << @results if print
 
       @results

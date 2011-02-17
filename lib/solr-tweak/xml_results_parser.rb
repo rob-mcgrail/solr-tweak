@@ -59,8 +59,10 @@ module XMLResultsParser
   def get_result_header(results)
     @results_header = OpenStruct.new
 
+    # query is a method in the parent (outputter) that gets the query from the @request object
+    @results_header.query = query
+
     @results_header.numfound = results.xpath('//result[@name="response"]').first.attributes['numFound'].to_s
-    # @results_header.query = results.xpath('//str[@name="q"]').first.content
 
     @results_header
   end

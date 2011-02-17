@@ -23,9 +23,8 @@ class ToTerminal < Outputter
 
   def print_result_header
     numfound = @results.first.numfound
-    # query = @results.first.query
 
-    puts "Results for: {query} ================================== Returned: #{numfound} ===".black_on_yellow
+    puts "Results for: #{query} ================================== Returned: #{numfound} ===".black_on_yellow
     puts
   end
 
@@ -41,7 +40,6 @@ class ToTerminal < Outputter
       @@limit.times do |i|
         puts items[i].title + '  ' + items[i].pid.magenta + '  ' + items[i].score[0..4].red
         puts items[i].url.blue_with_underline if items[i].url
-        puts
       end
     end
   end

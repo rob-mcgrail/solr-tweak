@@ -12,17 +12,25 @@ class Outputter
   end
 
   # A convenient way of printing results: @output << results
-  def <<(results)
-    @results = results
-    print
+  def <<(arg)
+    if arg.is_a? Array
+      @results = arg
+      print
+    elsif arg.is_a? String
+      self.announce arg
+    end
   end
 
   # A catch-all way of printing arbitrary messages.
+  private
+
+  def query
+    @request.q
+  end
+
   def announce(string)
     puts 'Called announce from the template...'
   end
-
-  private
 
   def print
     print_result_header
