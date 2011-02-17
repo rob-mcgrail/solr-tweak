@@ -9,13 +9,17 @@ Outputter.limit 10 #how to change results limit
 Terminal.clear
 
 handler = Query.new :request => TKI_HANDLER
-new =  Query.new :request => TKI_DEFAULT
+equivalent =  Query.new :request => TKI_DEFAULT
+baseline = Query.new :request => BASELINE
+
+# handler << 'educational leaders'
+equivalent << 'tki'
+
+Scorer.new(equivalent, handler, :title => 'Handler versus default')
 
 
-# y = Query.new
-handler << 'educational leaders'
-new << 'educational leaders'
-# y << 'hello hi'
 
-Scorer.new(handler, new)
 
+
+# Scorer.new(handler, handler, :title => 'Handler versus handler', :search_term => 'tki')
+# Scorer.new(handler, baseline, :title => 'Handler versus baseline', :search_term => 'tki')
