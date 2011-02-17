@@ -13,10 +13,9 @@ new =  Query.new :request => TKI_DEFAULT
 
 
 # y = Query.new
-
 handler << 'educational leaders'
 new << 'educational leaders'
 # y << 'hello hi'
 
-#Scorer.new(handler, new)
+Scorer.new(handler, new)
 

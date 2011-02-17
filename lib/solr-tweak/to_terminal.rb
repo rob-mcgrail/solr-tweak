@@ -29,7 +29,6 @@ class ToTerminal < Outputter
     query = @results.first.query
 
     puts "Results for: #{query} ================================== Returned: #{numfound} ===".black_on_yellow
-    puts
   end
 
 

@@ -130,6 +130,7 @@ class Request
   def initialize
     @q = ''
     @fl = '*,+score'
+    @dismax = nil
   end
 
   # A class the populated the request with a hash of values.
@@ -140,7 +141,7 @@ class Request
 
       k = '@' + k.to_s
       self.instance_variable_set(k.to_sym, v)
-
+      puts k; puts v
     end
 
     # You need this... (or it returns the last item from the iterator)
@@ -153,13 +154,22 @@ class Request
     request = String.new
     request << BASE
     request << 'q=' + @q
+    request << '&fl=' + @fl
 
-    vars = Request.new.instance_variables + self.instance_variables
-    vars = vars.uniq
+    if @dismax == true
+      request << '&defType=dismax'
+    end
+
+    old = Request.new.instance_variables.collect {|s| s.to_s}
+    current = self.instance_variables.collect {|s| s.to_s}
+
+    vars = current - old
 
     if vars != nil
       vars.each do |var|
-        request << '&' + var.to_s.gsub('@', '') + '=' + self.instance_variable_get(var)
+        if var.is_a? String
+          request << '&' + var.to_s.gsub('@', '') + '=' + self.instance_variable_get(var)
+        end
       end
     end
 

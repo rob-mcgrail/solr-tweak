@@ -48,13 +48,11 @@ class Query
   #
   # Calls get_results, or returns the @results if already populated.
   def results opts ={}
-
     defaults = { :print => nil }
 
     print = opts[:print] || defaults[:print]
 
     get_results if @parsed_results == nil
-
     if print
       @output << @request.full
       @output << @parsed_results
