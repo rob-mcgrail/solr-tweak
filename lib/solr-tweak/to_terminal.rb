@@ -15,7 +15,9 @@ class ToTerminal < Outputter
 
 
   def announce(string)
-    puts; puts (string + '                 ').white_on_blue; puts
+    puts
+    puts (string + '                        ').white_on_blue
+    puts
   end
 
 
