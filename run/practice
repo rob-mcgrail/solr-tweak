@@ -8,15 +8,15 @@ Outputter.limit 10 #how to change results limit
 
 Terminal.clear
 
-nothing =   Query.new
-standard =  Query.new :request => TkiRequest
+handler = Query.new :request => TKI_HANDLER
+new =  Query.new :request => TKI_DEFAULT
 
 
 # y = Query.new
 
-standard << 'educational leaders'
-nothing << 'educational leaders'
+handler << 'educational leaders'
+new << 'educational leaders'
 # y << 'hello hi'
 
-Scorer.new(standard, nothing)
+#Scorer.new(handler, new)
 
