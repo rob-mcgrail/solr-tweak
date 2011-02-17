@@ -5,28 +5,41 @@ class Scorer
   # Used for testing new Requests against ideal results.
   #
   # Scorer.new(query1, query2)
-  # Scorer.new(query, ResultTest)
+  # Scorer.new(query, ResultTest, :query => 'thing')
 
   def initialize(actual, ideal, opts = {})
-    @actual = actual.results
-    @request = actual.request
+
+    @score = 0
+    
+    @actual_complete = actual
+    @ideal_complete = ideal
+    
 
     defaults = {
-      :output => ToTerminal.new
+      :output => ToTerminal.new,
+      :title => nil,
+      :search_term => nil
     }
 
     @output = defaults[:output] || opts[:output]
-    # @term = @actual.first.query # not returned anymore if you use the tki handler
+    @title = defaults[:title] || opts[:title]
+    @search_term = defaults[:search_term] || opts[:search_term]
 
-    @ideal = quack(ideal)
-
-    @score = 0
+    # If we passed in a query as an option, load that in
+    # this is necessary if these objects haven't done queries yet
+    set_search_term @search_term if @search_term != nil
+    @actual = @actual_complete.results
+    # Quack handles both queries and resultset objects, 
+    # and adds the actual object's query to ideal if necessary.
+    
+    @ideal = quack(@ideal_complete)
+        
+    @request = actual.request
 
     # Since it's all that goes on in here, immediately score
     # the results.
-    score
 
-    @output << @score
+    @output << score
   end
 
 
@@ -36,6 +49,11 @@ class Scorer
   # for the second argument.
   def quack(arg)
     if arg.is_a? Query
+      # Handle it if someone passed in a used actual, but an unused ideal
+      if arg.q == ''
+        puts arg.q
+        arg.term @actual_complete.q
+      end
       resultset = arg.results
     elsif arg.is_a? ResultSet
       resultset = arg
@@ -43,6 +61,12 @@ class Scorer
       raise 'Passing the scorer the wrong sort of reference object. Query or ResultSet are valid.'
     end
     resultset
+  end
+  
+  
+  def set_search_term(query)
+    @actual_complete.term @search_term
+    @ideal_complete.term @search_term if @ideal_complete.is_a? Query
   end
 
 
@@ -80,8 +104,9 @@ class Scorer
         @score += 10 - (ide_rank - act_rank).abs
       end
     end
+    # Create a results hash. The @output << method knows a hash means it's scorer results...
+    @results = {:score => @score, :title => @title, :query => @actual_complete.q}
   end
-
 
 
 end
