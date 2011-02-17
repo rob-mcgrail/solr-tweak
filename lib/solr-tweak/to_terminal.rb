@@ -24,6 +24,16 @@ class ToTerminal < Outputter
   private
 
 
+  def print_scorer_output
+    title = @results[:title] || nil
+    score = @results[:score]
+    query = @results[:query]
+    
+    puts "===== Query: #{query} =========== Comparison #{title}  ".black_on_yellow
+    puts "Score: #{score}  ".red; puts
+  end
+
+
   def print_result_header
     numfound = @results.first.numfound
     query = @results.first.query
