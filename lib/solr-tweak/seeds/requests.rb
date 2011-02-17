@@ -3,19 +3,8 @@
 
 
 
-BASELINE_REQUEST = Request.new.seed({
+BASELINE = Request.new.seed({
   :x => 'thing',
-})
-
-TKI_HANDLER = Request.new.seed({
-  :qt => 'tki',
-})
-
-TKI_DEFAULT = Request.new.seed({
-  :dismax => true,
-  :qf => 'title_t^10+keyword.text^7+description_t^5+location_t+dc.format+dc.right+dc.subject+topics.all.text+contentprovider+contentsource+strand+learningarea+keylearningobjective+educationalvalue+host+site+institution_name_t+url+ezf_df_text',
- # :fq => 'meta_anon_access_b:true AND (url:[* TO *] AND url:http AND -url:cmis.cwa.co.nz AND -url:"http\://admin") AND -keyword:waec AND -keyword:moec AND englishstatus:live',
- # :bq => 'url:.nz^50 (dc.right:Ministry of Education, New Zealand)^100',
 })
 
 #<requestHandler name="tki" class="solr.SearchHandler">
@@ -41,4 +30,22 @@ TKI_DEFAULT = Request.new.seed({
 #		<str>elevator</str>
 #	</arr>
 #</requestHandler>
+
+
+TKI_HANDLER = Request.new.seed({
+  :qt => 'tki',
+})
+
+TKI_DEFAULT = Request.new.seed({
+  :dismax => true,
+  :qf => 'title_t^10+keyword.text^7+description_t^5+location_t+dc.format+dc.right+dc.subject+topics.all.text+contentprovider+contentsource+strand+learningarea+keylearningobjective+educationalvalue+host+site+institution_name_t+url+ezf_df_text',
+  :fq => 'meta_anon_access_b:true AND (url:[* TO *] AND url:http AND -url:cmis.cwa.co.nz AND -url:"http\://admin") AND -keyword:waec AND -keyword:moec AND englishstatus:live',
+  :bq => 'url:.nz^50 (dc.right:Ministry of Education, New Zealand)^100',
+})
+
+
+
+
+
+
 
