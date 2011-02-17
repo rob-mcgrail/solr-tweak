@@ -15,11 +15,16 @@ class Outputter
   def <<(arg)
     if arg.is_a? Array
       @results = arg
-      print
+      print_results
     elsif arg.is_a? String
       self.announce arg
     elsif arg.is_a? Fixnum
       self.announce arg.to_s
+    elsif arg.is_a? Hash
+      @results = arg
+      print_scorer_output
+    else
+      
     end
   end
 
@@ -30,8 +35,14 @@ class Outputter
   def announce(string)
     puts 'Called announce from the template...'
   end
+  
+  
+  def print_scorer_output
+    puts 'Called print_scorer_output from the template...'
+  end
 
-  def print
+
+  def print_results
     print_result_header
     print_result_set
     print_result_footer
