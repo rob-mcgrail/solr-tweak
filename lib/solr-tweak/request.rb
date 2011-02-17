@@ -121,7 +121,7 @@ class Request
   # <!--
 
 
-  attr_accessor :base, :q, :qf, :fl, :qt
+  attr_accessor :base, :q
 
   BASE = 'http://search.tki.org.nz:8983/solr/select?'
 
@@ -130,22 +130,20 @@ class Request
   def initialize
     @q = ''
     @fl = '*,+score'
-    @qt = ''
-    @qf = ''
   end
 
   # A class the populated the request with a hash of values.
   # Unfinished.
   def seed(hash)
+
     hash.each do |k,v|
-      #if k == :qf
-      #  k = '@' + k.to_s
-      #  self.instance_variable_set(k.to_sym, build_qf(v))
-      #else
 
       k = '@' + k.to_s
       self.instance_variable_set(k.to_sym, v)
+
     end
+
+    # You need this... (or it returns the last item from the iterator)
     self
   end
 
@@ -155,9 +153,16 @@ class Request
     request = String.new
     request << BASE
     request << 'q=' + @q
-    request << '&qt=' + @qt  #preset request handler
-    request << '&fl=' + @fl
-    # request << 'qf=' + @qf
+
+    vars = Request.new.instance_variables + self.instance_variables
+    vars = vars.uniq
+
+    if vars != nil
+      vars.each do |var|
+        request << '&' + var.to_s.gsub('@', '') + '=' + self.instance_variable_get(var)
+      end
+    end
+
     request
   end
 
