@@ -42,6 +42,12 @@ class Query
   def term(string)
     @request.q = string
   end
+  
+  
+  def q
+    @request.q
+  end
+  
 
   # The main method for Queries - automatic printing to
   # output is optional, off by default.
