@@ -142,7 +142,6 @@ class Request
 
       k = '@' + k.to_s
       self.instance_variable_set(k.to_sym, v)
-      puts k; puts v
     end
 
     # You need this... (or it returns the last item from the iterator)
