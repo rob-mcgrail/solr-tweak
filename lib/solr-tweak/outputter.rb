@@ -10,6 +10,11 @@ class Outputter
   def self.limit(i)
     @@limit = i
   end
+  
+  
+  def self.<<(string)
+    puts string
+  end
 
   # A convenient way of printing results: @output << results
   def <<(arg)
