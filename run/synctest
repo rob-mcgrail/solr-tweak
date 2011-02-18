@@ -1,0 +1,23 @@
+#!/usr/bin/ruby
+PATH = File.expand_path(File.dirname(__FILE__))
+
+require File.expand_path("../../lib/solr-tweak.rb", __FILE__)
+
+
+Outputter.limit 10 #how to change results limit
+
+Terminal.clear
+
+handler = Query.new :request => TKI_HANDLER
+tki_default =  Query.new :request => TKI_DEFAULT
+
+ToTerminal << 'These should all have a score of 200'
+
+Scorer.new(tki_default, handler, :title => 'Handler versus default', :search_term => 'tki')
+Scorer.new(tki_default, handler, :title => 'Handler versus default', :search_term => 'educational leaders')
+Scorer.new(tki_default, handler, :title => 'Handler versus default', :search_term => 'level 5')
+Scorer.new(tki_default, handler, :title => 'Handler versus default', :search_term => 'earthquakes')
+Scorer.new(tki_default, handler, :title => 'Handler versus default', :search_term => 'guidance for schools')
+Scorer.new(tki_default, handler, :title => 'Handler versus default', :search_term => 'once upon a time long long ago')
+
+
