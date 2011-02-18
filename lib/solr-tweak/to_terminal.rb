@@ -13,6 +13,15 @@ class ToTerminal < Outputter
 # query = Query.new :output => Meagaphone.new
 #
 
+  def self.<<(string)
+    puts
+    puts '---------------------------------------'.green
+    puts string.magenta
+    puts '---------------------------------------'.green
+    puts
+  end
+
+
 
   def announce(string)
     puts
@@ -29,7 +38,7 @@ class ToTerminal < Outputter
     score = @results[:score]
     query = @results[:query]
     
-    puts "===== Query: #{query} =========== Comparison #{title}  ".black_on_yellow
+    puts "===== Query: #{query} =========== Comparison #{title}  ".black_on_white
     puts "Score: #{score}  ".red; puts
   end
 
@@ -38,21 +47,28 @@ class ToTerminal < Outputter
     numfound = @results.first.numfound
     query = @results.first.query
 
-    puts "Results for: #{query} ================================== Returned: #{numfound} ===".black_on_yellow
+    puts "Results for: #{query} ================================== Returned: #{numfound} ===".black_on_yellow; puts
   end
 
 
   def print_result_set
    if @results.first.numfound == '0'
       self.announce 'No results'
-   else
+   else     
       items = @results[1]
+      
+      #Deal with results that are smaller than the limit...
+      if items.length < @@limit
+        limit = items.length
+      else
+        limit = @@limit
+      end
 
       # Limits output by the class variable defined
-      # and alterable in Outputter
-      @@limit.times do |i|
+      # and alterable in Outputter      
+      limit.times do |i|
         puts items[i].title + '  ' + items[i].pid.magenta + '  ' + items[i].score[0..4].red
-        puts items[i].url.blue_with_underline if items[i].url
+        puts items[i].url.blue_with_underline if items[i].url; puts
       end
     end
   end
