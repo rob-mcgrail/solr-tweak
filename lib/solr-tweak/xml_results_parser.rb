@@ -43,13 +43,13 @@ module XMLResultsParser
   # This is repeated throughout the class. Simple add a name => xpath
   # pair below, and it will end up in the individual results ostructs in the @results[1] Array.
   @@fields = {
-    :url => '//arr[@name="url"]/str',
+    :url => '//arr[@name="url"]',
     :title => '//str[@name="title"]',
     :score => '//float[@name="score"]',
     :pid => '//str[@name="PID"]',
     :ezhost => '//arr[@name="meta_installation_url_s"]',
     :ezpath => '//arr[@name="meta_url_alias_s"]',
-    :eztitle => '//arr[@name="title_t"]',
+    :eztitle => '//arr[@name="title_t"]/str',
     }
 
   @@fields.each do |k,v|
@@ -132,7 +132,12 @@ module XMLResultsParser
       return results
     else
       results.each do |r|
+        
+        # Making a full url out of the horrible object returned in the xml/xpath
+        r.url = r.url.inject('') {|url, line| url + line.gsub('  ','').chomp}
+
         r.title = r.eztitle if r.title == nil
+
         if r.url == nil
           if r.ezhost != nil
             r.url = r.ezhost + r.ezpath
