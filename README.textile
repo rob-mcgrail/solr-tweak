@@ -16,7 +16,7 @@ h2. Creating new handlers
 
 Handlers are created via Request#seed:
 
-SOME_HANDLER = Request.new.seed {:param => value}
+@SOME_HANDLER = Request.new.seed {:param => value}@
 
 #seed can handle any values. Here's an example:
 
