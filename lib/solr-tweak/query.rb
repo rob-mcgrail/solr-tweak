@@ -37,6 +37,12 @@ class Query
 
     self.results :print => true
   end
+  
+  def verbose(string)
+    self.term(string)
+
+    self.results :verbose => true
+  end
 
   # A setter for the search term.
   def term(string)
@@ -54,14 +60,20 @@ class Query
   #
   # Calls get_results, or returns the @results if already populated.
   def results opts ={}
-    defaults = { :print => nil }
+    defaults = { :print => nil, :verbose => nil }
 
-    print = opts[:print] || defaults[:print]
+    print   = opts[:print] || defaults[:print]
+    verbose = opts[:verbose] || defaults[:verbose]
 
     get_results if @parsed_results == nil
+    
     if print
       @output << @request.full
       @output << @parsed_results
+    end
+    
+    if verbose
+      puts @raw_results
     end
 
     @parsed_results

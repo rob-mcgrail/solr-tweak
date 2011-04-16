@@ -7,7 +7,7 @@ class Request
   # and other options, possibly via request#seed
 
   # q=test&
-  # qt=tki&                  :http://wiki.apache.org/solr/SolrRequestHandler
+  # qt=tki&                  http://wiki.apache.org/solr/SolrRequestHandler
   # hl.usePhraseHighlighter=true
   # &hl.highlightMultiTerm=true
   # &start=0
@@ -169,7 +169,7 @@ class Request
     if vars != nil
       vars.each do |var|
         if var.is_a? String
-          request << '&' + var.to_s.gsub('@', '') + '=' + self.instance_variable_get(var)
+          request << '&' + var.to_s.gsub('@', '') + '=' + self.instance_variable_get(var).to_s
         end
       end
     end

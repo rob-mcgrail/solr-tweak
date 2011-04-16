@@ -37,7 +37,7 @@ class ToTerminal < Outputter
     title = @results[:title] || nil
     score = @results[:score]
     query = @results[:query]
-    
+
     puts "===== Query: #{query} =========== Comparison #{title}  ".black_on_white
     puts "Score: #{score}  ".red; puts
   end
@@ -54,21 +54,12 @@ class ToTerminal < Outputter
   def print_result_set
    if @results.first.numfound == '0'
       self.announce 'No results'
-   else     
+   else
       items = @results[1]
-      
-      #Deal with results that are smaller than the limit...
-      if items.length < @@limit
-        limit = items.length
-      else
-        limit = @@limit
-      end
 
-      # Limits output by the class variable defined
-      # and alterable in Outputter      
-      limit.times do |i|
-        puts items[i].title + '  ' + items[i].pid.magenta + '  ' + items[i].score[0..4].red
-        puts items[i].url.blue_with_underline if items[i].url; puts
+      items.each do |i|
+        puts i.title + '  ' + i.pid.magenta + '  ' + i.score[0..4].red
+        puts i.url.blue_with_underline if i.url
       end
     end
   end

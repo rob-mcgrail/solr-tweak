@@ -134,9 +134,16 @@ module XMLResultsParser
       results.each do |r|
         
         # Making a full url out of the horrible object returned in the xml/xpath
-        r.url = r.url.inject('') {|url, line| url + line.gsub('  ','').chomp}
-
-        r.title = r.eztitle if r.title == nil
+        if r.url
+          r.url = r.url.inject('') {|url, line| url + line.gsub('  ','').chomp}
+        end
+        
+        if r.title == nil
+          r.title = r.eztitle
+          if r.title == nil
+            r.title = ''
+          end
+        end
 
         if r.url == nil
           if r.ezhost != nil

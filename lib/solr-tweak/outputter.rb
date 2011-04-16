@@ -1,16 +1,7 @@
 class Outputter
 
 # Template class for output objects. Children should do all the things below.
-# See ToTerminal for an example child.
-
-  # @@limit class variable sets a global limit for the printing out results.
-  @@limit = 5
-
-  # Set limit for printing of results: Outputter.limit 5
-  def self.limit(i)
-    @@limit = i
-  end
-  
+# See ToTerminal for an example child.  
   
   def self.<<(string)
     puts string
