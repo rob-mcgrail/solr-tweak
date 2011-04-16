@@ -14,10 +14,10 @@ end
 
 
 
-Outputter.limit 10 #how to change results limit
+$limit = 10 #how to change results limit
 
 Terminal.clear
 
-test =  Query.new :request => SCRATCH
+test =  Query.new :request => TKI_FORK
 
 test << term

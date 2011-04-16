@@ -1,0 +1,28 @@
+#!/usr/bin/ruby
+PATH = File.expand_path(File.dirname(__FILE__))
+
+require File.expand_path("../../lib/solr-tweak/utils/trollop.rb", __FILE__)
+
+opts = Trollop::options do
+  opt :handler, "Select handler", :default => 'TKI_HANDLER'
+  opt :verbose, "Print out full records", :default => nil
+  opt :limit, "Limit results", :default => 10
+end
+
+Trollop::die "I need a search term" if ARGV.empty?
+
+term = ARGV[0]
+$limit = opts[:limit].to_s
+
+require File.expand_path("../../lib/solr-tweak.rb", __FILE__)
+
+Terminal.clear
+
+requester = Query.new :request => Kernel.const_get(opts[:handler])
+
+if opts[:verbose]
+  requester.verbose term
+else
+  requester << term
+end
+

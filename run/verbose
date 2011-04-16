@@ -1,0 +1,21 @@
+#!/usr/bin/ruby
+PATH = File.expand_path(File.dirname(__FILE__))
+
+if ARGV.length > 3
+  raise "Too many arguments"
+elsif ARGV[0] == nil
+  raise "I need arguments! query, request (optional - tki handler), limit (optional - 10)"
+else
+  term = ARGV[0]
+  request = ARGV[1] || TKI_HANDLER
+  $limit = ARGV[2] || 10
+end
+
+require File.expand_path("../../lib/solr-tweak.rb", __FILE__)
+
+
+Terminal.clear
+
+test =  Query.new :request => Kernel.const_get(request)
+
+test.verbose term

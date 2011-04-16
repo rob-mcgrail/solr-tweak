@@ -4,7 +4,7 @@ PATH = File.expand_path(File.dirname(__FILE__))
 require File.expand_path("../../lib/solr-tweak.rb", __FILE__)
 
 
-Outputter.limit 10 #how to change results limit
+$limit = 10 #how to change results limit
 
 Terminal.clear
 
