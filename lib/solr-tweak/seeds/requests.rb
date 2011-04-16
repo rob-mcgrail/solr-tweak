@@ -1,7 +1,6 @@
 
 # Various constants - each should be a Request object ready for placement in a Query.
 BASELINE = Request.new.seed({
-  :rows => $limit
 })
 
 #<requestHandler name="tki" class="solr.SearchHandler">
@@ -30,7 +29,6 @@ BASELINE = Request.new.seed({
 
 TKI_HANDLER = Request.new.seed({
   :qt => 'tki',
-  :rows => $limit
 })
 
 TKI_DEFAULT = Request.new.seed({
@@ -38,7 +36,6 @@ TKI_DEFAULT = Request.new.seed({
   :qf => 'title_t^10+keyword.text^7+description_t^5+location_t+dc.format+dc.right+dc.subject+topics.all.text+contentprovider+contentsource+strand+learningarea+keylearningobjective+educationalvalue+host+site+institution_name_t+url+ezf_df_text',
   :fq => 'meta_anon_access_b:true AND (url:[* TO *] AND url:http AND -url:cmis.cwa.co.nz AND -url:"http\://admin") AND -keyword:waec AND -keyword:moec AND englishstatus:live',
   :bq => 'url:.nz^50 (dc.right:Ministry of Education, New Zealand)^100',
-  :rows => $limit
 })
 
 TKI_FORK = Request.new.seed({
@@ -46,7 +43,6 @@ TKI_FORK = Request.new.seed({
   :qf => 'title_t^10+keyword.text^7+description_t^5+location_t+dc.format+dc.right+dc.subject+topics.all.text+contentprovider+contentsource+strand+learningarea+keylearningobjective+educationalvalue+host+site+institution_name_t+url+ezf_df_text',
   :fq => 'meta_anon_access_b:true AND (url:[* TO *] AND url:http AND -url:cmis.cwa.co.nz AND -url:"http\://admin") AND -keyword:waec AND -keyword:moec AND englishstatus:live',
   :bq => 'url:.nz^50 (dc.right:Ministry of Education, New Zealand)^100',
-  :rows => $limit
 })
 
 SCRATCH = Request.new.seed({
@@ -56,7 +52,6 @@ SCRATCH = Request.new.seed({
   :bq => 'url:.nz^50 (dc.right:Ministry of Education, New Zealand)^100',
   :pf => 'title_t^300+ezf_df_text^100+description_t^60',
   :ps => '0',
-  :rows => $limit
 })
 
 
