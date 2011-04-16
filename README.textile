@@ -1,2 +1,32 @@
-h1. things
+h1. solr-tweak
+h2. library / command line tool for testing of alternative rankings for TKI's solr search
+
+Usage:
+
+@$ ruby ruby/search 'learning'@
+
+Options:
+
+--limit (limit results - default is 10)
+--verbose (returns entire records)
+--handler (selects a search handler, default is the current tki handler)
+
+h2. Creating new handlers
+
+Handlers are created via Request#seed:
+
+SOME_HANDLER = Request.new.seed {:param => value}
+
+#seed can handle any values. Here's an example:
+
+@
+SCRATCH = Request.new.seed({
+  :dismax => true,
+  :qf => 'title_t^30+keyword.text^7+description_t^5+location_t+dc.format+dc.right+dc.subject+topics.all.text+contentprovider+contentsource+strand+learningarea+keylearningobjective+educationalvalue+host+site+institution_name_t+url+ezf_df_text',
+  :fq => 'meta_anon_access_b:true AND (url:[* TO *] AND url:http AND -url:cmis.cwa.co.nz AND -url:"http\://admin") AND -keyword:waec AND -keyword:moec AND englishstatus:live',
+  :bq => 'url:.nz^50 (dc.right:Ministry of Education, New Zealand)^100',
+  :pf => 'title_t^300+ezf_df_text^100+description_t^60',
+  :ps => '0',
+})
+@
 
