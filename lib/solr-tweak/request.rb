@@ -35,7 +35,7 @@ class Request
     request << 'q=' + @q
     request << '&fl=' + @fl
     request << '&sort=score+desc'
-    request << '&rows=' + $limit
+    request << '&rows=' + $limit.to_s
 
     if @dismax == true
       request << '&defType=dismax'
