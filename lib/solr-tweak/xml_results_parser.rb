@@ -46,7 +46,7 @@ module XMLResultsParser
     :url => '//arr[@name="url"]',
     :title => '//str[@name="title"]',
     :score => '//float[@name="score"]',
-    :pid => '//str[@name="PID"]',
+    :pid => '//str[@name="id"]',
     :ezhost => '//arr[@name="meta_installation_url_s"]',
     :ezpath => '//arr[@name="meta_url_alias_s"]',
     :eztitle => '//arr[@name="title_t"]/str',
@@ -156,7 +156,6 @@ module XMLResultsParser
       end
     end
   end
-
 
 end
 
