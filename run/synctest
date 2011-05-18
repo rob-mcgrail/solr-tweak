@@ -8,8 +8,8 @@ $limit = 10 #how to change results limit
 
 Terminal.clear
 
-handler = Query.new :request => TKI_HANDLER
-tki_default =  Query.new :request => TKI_DEFAULT
+handler = Query.new :request => TKI_DEFAULT
+tki_default =  Query.new :request => TKI_HANDLER
 
 ToTerminal << 'These should all have a score of 200'
 
