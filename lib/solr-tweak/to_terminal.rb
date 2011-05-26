@@ -60,6 +60,7 @@ class ToTerminal < Outputter
       items.each do |i|
         puts i.title + '  ' + i.pid.magenta + '  ' + i.score[0..4].red
         puts i.url.blue_with_underline if i.url
+				puts i.explanation.to_s.green if i.explanation
       end
     end
   end

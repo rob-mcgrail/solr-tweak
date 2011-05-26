@@ -1,7 +1,7 @@
 class Request
   require 'cgi'
 
-  attr_accessor :base, :q
+  attr_accessor :base, :q, :explain
 
   BASE = 'http://search.tki.org.nz:8983/solr/select?'
 
@@ -11,6 +11,7 @@ class Request
     @q = ''
     @fl = '*,+score'
     @dismax = nil
+		@explain = nil
   end
 
   # A class the populated the request with a hash of values.
@@ -40,6 +41,10 @@ class Request
     if @dismax == true
       request << '&defType=dismax'
     end
+
+		if @explain == true
+      request << '&debugQuery=true'
+		end
 
     old = Request.new.instance_variables.collect {|s| s.to_s}
     current = self.instance_variables.collect {|s| s.to_s}

@@ -23,10 +23,16 @@ class Query
     defaults = {
       :output => ToTerminal.new,
       :request => Request.new,
+			:explain => nil
     }
 
     @output = opts[:output] || defaults[:output]
     @request = opts[:request] || defaults[:request]
+    @explain = opts[:explain] || defaults[:explain]
+
+		if @explain
+			@request.explain = true
+		end
   end
 
   # A quick way of firing off a query: query << 'tki things'

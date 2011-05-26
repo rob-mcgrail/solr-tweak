@@ -80,6 +80,20 @@ module XMLResultsParser
   #
   # Creates an array of indidivual results, each an ostruct with values
   # available like: x.title, x.pid etc...
+	def get_explanations
+    explanations = @raw_results.xpath('//lst[@name="explain"]/str')
+		tmp = Array.new
+    explanations.each do |doc|
+      # A workaround for what I consider to be extremely odd Nokogiri
+      # behavior, but which will turn out to be due to my misunderstanding
+      # the library, or xml in general...
+      doc = Nokogiri::XML.parse doc.to_s
+      tmp << doc
+    end
+		tmp
+	end
+
+
   def get_result_body
 
     # Find individual records
@@ -102,6 +116,8 @@ module XMLResultsParser
     end
 
     result_body = Array.new
+
+		explanations = get_explanations
     # Iterate through the hashes, converting to ostructs.
     tmp.length.times do |i|
       x = OpenStruct.new
@@ -112,6 +128,7 @@ module XMLResultsParser
         x.send("#{k}=", tmp[i]["#{k}s".to_sym])
       end
       x.rank = i
+			x.send("explanation=", explanations[i-1])
       result_body << x
     end
     # Pass everything so far to XMLResultsParser#map
@@ -137,6 +154,7 @@ module XMLResultsParser
         if r.url
           r.url = r.url.inject('') {|url, line| url + line.gsub('  ','').chomp}
         end
+			
         
         if r.title == nil
           r.title = r.eztitle
