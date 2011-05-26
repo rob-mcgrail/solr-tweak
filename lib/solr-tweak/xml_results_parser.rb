@@ -128,7 +128,7 @@ module XMLResultsParser
         x.send("#{k}=", tmp[i]["#{k}s".to_sym])
       end
       x.rank = i
-			x.send("explanation=", explanations[i-1])
+			x.send("explanation=", explanations[i])
       result_body << x
     end
     # Pass everything so far to XMLResultsParser#map
