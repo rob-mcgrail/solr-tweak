@@ -1,9 +1,8 @@
 class Request
   require 'cgi'
 
-  attr_accessor :base, :q, :explain
+  attr_accessor :q, :explain
 
-  BASE = 'http://search.tki.org.nz:8983/solr/select?'
 
   # Values set at initialize can always be overwritten
   # by seed.
@@ -32,7 +31,7 @@ class Request
   # in Query.
   def full
     request = String.new
-    request << BASE
+    request << $request_stub || 'http://search.tki.org.nz:8983/solr/select?'
     request << 'q=' + @q
     request << '&fl=' + @fl
     request << '&sort=score+desc'

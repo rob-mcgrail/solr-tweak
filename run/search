@@ -8,6 +8,7 @@ opts = Trollop::options do
   opt :verbose, "Print out full records", :default => nil
   opt :limit, "Limit results", :default => 10
 	opt :explain, "Explain rankings", :default => nil
+	opt :server, "Select server", :default => 'tki'
 end
 
 Trollop::die "I need a search term, at the very least" if ARGV.empty?
@@ -23,9 +24,11 @@ rescue
   Trollop::die "Bad handler. See lib/solr-tweak/seeds/.."
 end
 
+$request_stub = 'http://' + SERVERS[opts[:server].to_sym] + '/solr/select?'
+
 Terminal.clear
 
-requester = Query.new :request => handler, :explain => opts[:explain]
+requester = Query.new :request => handler, :explain => opts[:explain] 
 
 if opts[:verbose]
   requester.verbose term
