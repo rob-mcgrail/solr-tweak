@@ -9,7 +9,7 @@ TKI_HANDLER = Request.new.seed({
 
 TKI_NEWER_APROX = Request.new.seed({
   :dismax => true,
-  :qf => 'title_t^10+keyword.text^7+description_t^5+location_t+dc.format+dc.right+dc.subject+topics.all.text+contentprovider+contentsource+strand+learningarea+keylearningobjective+educationalvalue+host+site+institution_name_t+url+ezf_df_text',
+  :qf => 'id^20+pid^20+title_t^10+keyword.text^7+description_t^5+location_t+dc.format+dc.right+dc.subject+topics.all.text+contentprovider+contentsource+strand+learningarea+keylearningobjective+educationalvalue+host+site+institution_name_t+url+ezf_df_text',
   :fq => 'meta_anon_access_b:true AND (url:[* TO *] AND url:http AND -url:cmis.cwa.co.nz AND -url:"http\://admin") AND -keyword:waec AND -keyword:moec AND englishstatus:live',
   :bq => 'url:.nz^50 dc.right:"Ministry of Education, New Zealand"^100',
 })
@@ -18,14 +18,14 @@ TKI_DEFAULT = Request.new.seed({
   :dismax => true,
   :qf => 'title_t^10+keyword.text^7+description_t^5+location_t+dc.format+dc.right+dc.subject+topics.all.text+contentprovider+contentsource+strand+learningarea+keylearningobjective+educationalvalue+host+site+institution_name_t+url+ezf_df_text',
   :fq => 'meta_anon_access_b:true AND (url:[* TO *] AND url:http AND -url:cmis.cwa.co.nz AND -url:"http\://admin") AND -keyword:waec AND -keyword:moec AND englishstatus:live',
-  :bq => 'url:.nz^50 (dc.right:"Ministry of Education, New Zealand)^100',
+  :bq => 'url:.nz^50 dc.right:"Ministry of Education Te Tāhuhu o te Mātauranga"^100',
 })
 
 TKI_BETTER = Request.new.seed({
   :dismax => true,
   :qf => 'title_t^10+keyword.text^7+description_t^5+location_t+dc.format+dc.right+dc.subject+topics.all.text+contentprovider+contentsource+strand+learningarea+keylearningobjective+educationalvalue+host+site+institution_name_t+url+ezf_df_text',
   :fq => 'meta_anon_access_b:true AND (url:[* TO *] AND url:http AND -url:cmis.cwa.co.nz AND -url:"http\://admin") AND -keyword:waec AND -keyword:moec AND englishstatus:live',
-  :bq => 'url:.nz^50 dc.right:"Ministry of Education, New Zealand"^100',
+  :bq => 'url:.nz^10 dc.right:"Ministry of Education, New Zealand"^100',
 	:qs => '3',
 	:mm => '-1',
   :pf => 'title_t^30+ezf_df_text^30+description_t^20',
