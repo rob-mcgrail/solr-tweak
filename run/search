@@ -4,7 +4,7 @@ PATH = File.expand_path(File.dirname(__FILE__))
 require File.expand_path("../../lib/solr-tweak/utils/trollop.rb", __FILE__)
 
 opts = Trollop::options do
-  opt :handler, "Select handler", :default => 'TKI_HANDLER'
+  opt :handler, "Select handler", :default => 'TKI'
   opt :verbose, "Print out full records", :default => nil
   opt :limit, "Limit results", :default => 10
 	opt :explain, "Explain rankings", :default => nil

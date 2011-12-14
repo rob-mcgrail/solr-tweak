@@ -1,9 +1,6 @@
 module XMLResultsParser
   require 'ostruct'
 
-# A complex and ugly class, due to the madening variety of XML returned by
-# the TKI search.
-#
 # The Parser is mixed in to Query, which calls #parse, passing in the raw results xml
 # from Nokogiri. Values are pulled out in three blocks - a header (info about the results),
 # a body (an array of results-proper), and a footer (unused at the moment). These are placed in
@@ -58,9 +55,6 @@ module XMLResultsParser
       if node.first
         return node.first.content
       else
-        # Some records return some fields and not others, so just
-        # return nil in those cases, and let XMLResultsParser#map sort it out
-        # at the end.
         nil
       end
     end
@@ -150,7 +144,7 @@ module XMLResultsParser
     else
       results.each do |r|
         
-        # Making a full url out of the horrible object returned in the xml/xpath
+        # Making a full url out of the horrible thing returned in the xml/xpath
         if r.url
           r.url = r.url.inject('') {|url, line| url + line.gsub('  ','').chomp}
         end

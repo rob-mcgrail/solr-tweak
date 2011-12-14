@@ -3,36 +3,107 @@
 BASELINE = Request.new.seed({
 })
 
-TKI_HANDLER = Request.new.seed({
+TKIDIRECT = Request.new.seed({
   :qt => 'tki',
 })
 
-TKI_NEWER_APROX = Request.new.seed({
+
+
+TKI = Request.new.seed({
+  :qt => 'standard',
   :dismax => true,
-  :qf => 'id^20+pid^20+title_t^10+keyword.text^7+description_t^5+location_t+dc.format+dc.right+dc.subject+topics.all.text+contentprovider+contentsource+strand+learningarea+keylearningobjective+educationalvalue+host+site+institution_name_t+url+ezf_df_text',
-  :fq => 'meta_anon_access_b:true AND (url:[* TO *] AND url:http AND -url:cmis.cwa.co.nz AND -url:"http\://admin") AND -keyword:waec AND -keyword:moec AND englishstatus:live',
-  :bq => 'url:.nz^50 dc.right:"Ministry of Education, New Zealand"^100',
+  :qf => 'title_t^10 keyword.text^7 description_t^5 location_t dc.format dc.right dc.subject topics.all.text contentprovider contentsource strand learningarea keylearningobjective educationalvalue host site institution_name_t url ezf_df_text id',
+  :fq => 'meta_anon_access_b:true AND (url:[* TO *] AND url:http AND -url:cmis.cwa.co.nz AND -url:"http\://admin" AND -url:"http\://www.nzmaths.co.nz" AND -url:.internal. AND -url:.cwa.co.nz AND -url:/Media/Images/ AND -url:/Media/Files/) AND -keyword:waec AND -keyword:moec AND englishstatus:live',
+  :bq => 'url:.nz^10 dc.right:"Ministry of Education Te Tāhuhu o te Mātauranga"^100',
 })
 
-TKI_DEFAULT = Request.new.seed({
+BAREBONES = Request.new.seed({
+  :qt => 'standard',
+  :dismax => true,
+  :qf => 'ezf_df_text id',
+  :fq => 'meta_anon_access_b:true AND (url:[* TO *] AND url:http AND -url:cmis.cwa.co.nz AND -url:"http\://admin" AND -url:"http\://www.nzmaths.co.nz" AND -url:.internal. AND -url:.cwa.co.nz AND -url:/Media/Images/ AND -url:/Media/Files/) AND -keyword:waec AND -keyword:moec AND englishstatus:live',
+})
+
+URL = Request.new.seed({
+  :qt => 'standard',
+  :dismax => true,
+  :qf => 'title_t^10 keyword.text^20 description_t^5 location_t dc.format dc.right dc.subject topics.all.text contentprovider contentsource strand learningarea keylearningobjective educationalvalue host site institution_name_t url^40 ezf_df_text id',
+  :fq => 'meta_anon_access_b:true AND (url:[* TO *] AND url:http AND -url:cmis.cwa.co.nz AND -url:"http\://admin" AND -url:"http\://www.nzmaths.co.nz" AND -url:.internal. AND -url:.cwa.co.nz AND -url:/Media/Images/ AND -url:/Media/Files/) AND -keyword:waec AND -keyword:moec AND englishstatus:live',
+  :bq => 'url:tki^30 url:nz^30 dc.right:"Ministry of Education Te Tāhuhu o te Mātauranga"^10',
+	:qs => '3',
+  :mm => '30%',
+  :pf => 'title_t^50 ezf_df_text^10 url^20',
+  :ps => '3',
+})
+
+
+PHRASYTITLES = Request.new.seed({
+  :qt => 'standard',
+  :dismax => true,
+  :qf => 'title_t^10 keyword.text^10 description_t^5 location_t dc.format dc.right dc.subject topics.all.text contentprovider contentsource strand learningarea keylearningobjective educationalvalue host site institution_name_t url^10 ezf_df_text id',
+  :fq => 'meta_anon_access_b:true AND (url:[* TO *] AND url:http AND -url:cmis.cwa.co.nz AND -url:"http\://admin" AND -url:"http\://www.nzmaths.co.nz" AND -url:.internal. AND -url:.cwa.co.nz AND -url:/Media/Images/ AND -url:/Media/Files/) AND -keyword:waec AND -keyword:moec AND englishstatus:live',
+  :bq => 'url:.nz^10 url:tki^20 dc.right:"Ministry of Education Te Tāhuhu o te Mātauranga"^50',
+  :mm => '30%',
+  :pf => 'title_t^30',
+  :ps => '3',
+})
+
+
+KEYS = Request.new.seed({
+  :qt => 'standard',
+  :dismax => true,
+  :qf => 'title_t^10 keyword.text^10 description_t^10 location_t dc.format dc.right dc.subject topics.all.text contentprovider contentsource strand learningarea keylearningobjective educationalvalue host site institution_name_t url^40 ezf_df_text id',
+  :fq => 'meta_anon_access_b:true AND (url:[* TO *] AND url:http AND -url:cmis.cwa.co.nz AND -url:"http\://admin" AND -url:"http\://www.nzmaths.co.nz" AND -url:.internal. AND -url:.cwa.co.nz AND -url:/Media/Images/ AND -url:/Media/Files/) AND -keyword:waec AND -keyword:moec AND englishstatus:live',
+  :bq => 'url:tki^20 dc.right:"Ministry of Education Te Tāhuhu o te Mātauranga"^10',
+	:qs => '2',
+  :mm => '30%',
+  :pf => 'title_t^10 description_t^20',
+  :ps => '3',
+})
+
+
+
+
+
+
+
+
+
+
+OLDTKIALT = Request.new.seed({
+  :dismax => true,
+  :qf => 'title_t^10+keyword.text^7+description_t^5+location_t+dc.format+dc.right+dc.subject+topics.all.text+contentprovider+contentsource+strand+learningarea+keylearningobjective+educationalvalue+host+site+institution_name_t+ezf_df_text',
+  :fq => 'meta_anon_access_b:true AND (url:[* TO *] AND url:http AND -url:cmis.cwa.co.nz AND -url:"http\://admin") AND -keyword:waec AND -keyword:moec AND englishstatus:live',
+  :bq => 'dc.right:"Ministry of Education Te Tāhuhu o te Mātauranga"^100',
+})
+
+OLDTKINOMATHS = Request.new.seed({
+  :dismax => true,
+  :qf => 'title_t^10+keyword.text^7+description_t^5+location_t+dc.format+dc.right+dc.subject+topics.all.text+contentprovider+contentsource+strand+learningarea+keylearningobjective+educationalvalue+host+site+institution_name_t+url+ezf_df_text',
+  :fq => 'meta_anon_access_b:true AND (url:[* TO *] AND url:http AND -url:cmis.cwa.co.nz AND -url:"http\://admin") AND -keyword:waec AND -keyword:moec AND englishstatus:live ',
+  :bq => 'url:.nz^10 dc.right:"Ministry of Education Te Tāhuhu o te Mātauranga"^100',
+})
+
+
+OLDTKIALT2 = Request.new.seed({
   :dismax => true,
   :qf => 'title_t^10+keyword.text^7+description_t^5+location_t+dc.format+dc.right+dc.subject+topics.all.text+contentprovider+contentsource+strand+learningarea+keylearningobjective+educationalvalue+host+site+institution_name_t+url+ezf_df_text',
   :fq => 'meta_anon_access_b:true AND (url:[* TO *] AND url:http AND -url:cmis.cwa.co.nz AND -url:"http\://admin") AND -keyword:waec AND -keyword:moec AND englishstatus:live',
-  :bq => 'url:.nz^50 dc.right:"Ministry of Education Te Tāhuhu o te Mātauranga"^100',
+  :bq => 'dc.right:"Ministry of Education Te Tāhuhu o te Mātauranga"^100',
 })
 
-TKI_BETTER = Request.new.seed({
+OLDTKIBETTER = Request.new.seed({
   :dismax => true,
   :qf => 'title_t^10+keyword.text^7+description_t^5+location_t+dc.format+dc.right+dc.subject+topics.all.text+contentprovider+contentsource+strand+learningarea+keylearningobjective+educationalvalue+host+site+institution_name_t+url+ezf_df_text',
   :fq => 'meta_anon_access_b:true AND (url:[* TO *] AND url:http AND -url:cmis.cwa.co.nz AND -url:"http\://admin") AND -keyword:waec AND -keyword:moec AND englishstatus:live',
-  :bq => 'url:.nz^10 dc.right:"Ministry of Education, New Zealand"^100',
+  :bq => 'url:.nz^10 dc.right:"Ministry of Education Te Tāhuhu o te Mātauranga"^100',
 	:qs => '3',
 	:mm => '-1',
   :pf => 'title_t^30+ezf_df_text^30+description_t^20',
   :ps => '1',
 })
 
-TKI_FORK = Request.new.seed({
+OLDTKIFORK = Request.new.seed({
   :dismax => true,
   :qf => 'title_t^10+keyword.text^7+description_t^5+location_t+dc.format+dc.right+dc.subject+topics.all.text+contentprovider+contentsource+strand+learningarea+keylearningobjective+educationalvalue+host+site+institution_name_t+url+ezf_df_text',
   :fq => 'meta_anon_access_b:true AND (url:[* TO *] AND url:http AND -url:cmis.cwa.co.nz AND -url:"http\://admin") AND -keyword:waec AND -keyword:moec AND englishstatus:live',
@@ -43,13 +114,13 @@ TKI_FORK = Request.new.seed({
   :ps => '3',
 })
 
-SCRATCH = Request.new.seed({
+OLDSCRATCH = Request.new.seed({
   :dismax => true,
   :qf => 'keyword.text+dc.format+dc.right+dc.subject+topics.all.text',
   :bq => '-url:/Media/Images/ AND -url:ezportal-staging',
 })
 
-FILTER = Request.new.seed({
+OLDFILTER = Request.new.seed({
   :dismax => true,
   :qf => 'title_t^30+keyword.text^7+description_t^5+location_t+dc.format+dc.right+dc.subject+topics.all.text+contentprovider+contentsource+strand+learningarea+keylearningobjective+educationalvalue+host+site+institution_name_t+url+ezf_df_text',
   :fq => 'learningarea:learning+languages AND userlevel:Secondary',
